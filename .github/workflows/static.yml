@@ -1,4 +1,4 @@
-name: Deploy Doxygen to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -15,52 +15,23 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-
-    - name: Setup Doxygen
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y doxygen graphviz
-
-    - name: Generate Doxygen documentation
-      run: |
-        if [ ! -f Doxyfile ]; then
-          cat > Doxyfile << 'END'
-        PROJECT_NAME = "CircularLinkedList"
-        PROJECT_BRIEF = "STL-compatible circular doubly linked list"
-        INPUT = headers/
-        FILE_PATTERNS = *.h *.hpp *.cpp
-        RECURSIVE = NO
-        EXTRACT_ALL = YES
-        EXTRACT_PRIVATE = YES
-        OUTPUT_DIRECTORY = docs
-        GENERATE_HTML = YES
-        GENERATE_LATEX = NO
-        HAVE_DOT = YES
-        GENERATE_TREEVIEW = YES
-        END
-        fi
-        doxygen Doxyfile
-
-    - name: Setup Pages
-      uses: actions/configure-pages@v5
-
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: 'docs/html/'
-
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build
     steps:
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'docs/html/'
+          
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
