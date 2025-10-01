@@ -1,0 +1,10 @@
+<map id="CircularLinkedList::operator=" name="CircularLinkedList::operator=">
+<area shape="rect" id="Node000001" title="Move assignment operator." alt="" coords="5,5,143,45"/>
+<area shape="rect" id="Node000002" href="$classCircularLinkedList.html#a44b06ab6e05764613a20b72985e90250" title="Clear the list." alt="" coords="191,5,328,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,23,177,23,177,28,143,28"/>
+<area shape="rect" id="Node000003" href="$classCircularLinkedList.html#a8436a0177cb8927954f142c8d2ccfd93" title="Check if list is empty." alt="" coords="561,5,699,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="328,20,376,19,513,19,548,20,548,25,513,24,376,24,328,25"/>
+<area shape="rect" id="Node000004" href="$classCircularLinkedList.html#a0c43c6b0d2623d8c65e94ee02983169e" title="Remove first element." alt="" coords="376,33,513,73"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="329,33,363,38,362,44,328,38"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="513,40,547,35,548,40,514,46"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="CircularLinkedList&lt; T &gt;::Node" name="CircularLinkedList&lt; T &gt;::Node">
+<area shape="rect" id="Node000001" title="Internal node structure of the list." alt="" coords="5,123,143,163"/>
+<area shape="rect" id="Node000002" href="$structCircularLinkedList_1_1Node.html" title="Internal node structure of the list." alt="" coords="5,5,143,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,59,77,122,71,122,71,59"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="157,14,166,18,169,26,161,35,143,39,142,33,159,30,164,25,162,22,155,19"/>
+</map>

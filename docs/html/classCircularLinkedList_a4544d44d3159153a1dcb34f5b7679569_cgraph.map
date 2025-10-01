@@ -1,0 +1,5 @@
+<map id="CircularLinkedList::front" name="CircularLinkedList::front">
+<area shape="rect" id="Node000001" title="Access first element." alt="" coords="5,5,143,45"/>
+<area shape="rect" id="Node000002" href="$classCircularLinkedList.html#a8436a0177cb8927954f142c8d2ccfd93" title="Check if list is empty." alt="" coords="191,5,328,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,23,177,23,177,28,143,28"/>
+</map>

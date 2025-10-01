@@ -1,0 +1,121 @@
+\doxysection{Circular\+Linked\+List\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::Node Struct Reference}
+\hypertarget{structCircularLinkedList_1_1Node}{}\label{structCircularLinkedList_1_1Node}\index{CircularLinkedList$<$ T $>$::Node@{CircularLinkedList$<$ T $>$::Node}}
+
+
+Internal node structure of the list.  
+
+
+
+
+Collaboration diagram for Circular\+Linked\+List\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{structCircularLinkedList_1_1Node__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structCircularLinkedList_1_1Node_adea31e6ae9645742f1d7413135e61d25}{Node}} (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} \&\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{value}})
+\begin{DoxyCompactList}\small\item\em \doxylink{structCircularLinkedList_1_1Node}{Node} constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} \mbox{\hyperlink{structCircularLinkedList_1_1Node_a780e86ea8aa229119d9053cf2613b3dc}{data}}
+\begin{DoxyCompactList}\small\item\em \doxylink{structCircularLinkedList_1_1Node}{Node} data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCircularLinkedList_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structCircularLinkedList_1_1Node_ae5a8ecbd90b92821ef31d4a351551ac1}{next}}
+\begin{DoxyCompactList}\small\item\em Pointer to next node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCircularLinkedList_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structCircularLinkedList_1_1Node_addda6f06adb20c4d9fa2629fcafeaee5}{prev}}
+\begin{DoxyCompactList}\small\item\em Pointer to previous node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}}$>$\newline
+struct Circular\+Linked\+List$<$ T $>$\+::\+Node}
+Internal node structure of the list. 
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00024}{24}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structCircularLinkedList_1_1Node_adea31e6ae9645742f1d7413135e61d25}\label{structCircularLinkedList_1_1Node_adea31e6ae9645742f1d7413135e61d25} 
+\index{CircularLinkedList$<$ T $>$::Node@{CircularLinkedList$<$ T $>$::Node}!Node@{Node}}
+\index{Node@{Node}!CircularLinkedList$<$ T $>$::Node@{CircularLinkedList$<$ T $>$::Node}}
+\doxysubsubsection{\texorpdfstring{Node()}{Node()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::\+Node\+::\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxylink{structCircularLinkedList_1_1Node}{Node} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value for the node \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00033}{33}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00033\ :\ \mbox{\hyperlink{structCircularLinkedList_1_1Node_a780e86ea8aa229119d9053cf2613b3dc}{data}}(\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{value}}),\ \mbox{\hyperlink{structCircularLinkedList_1_1Node_ae5a8ecbd90b92821ef31d4a351551ac1}{next}}(\textcolor{keyword}{this}),\ \mbox{\hyperlink{structCircularLinkedList_1_1Node_addda6f06adb20c4d9fa2629fcafeaee5}{prev}}(\textcolor{keyword}{this})\ \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structCircularLinkedList_1_1Node_a780e86ea8aa229119d9053cf2613b3dc}\label{structCircularLinkedList_1_1Node_a780e86ea8aa229119d9053cf2613b3dc} 
+\index{CircularLinkedList$<$ T $>$::Node@{CircularLinkedList$<$ T $>$::Node}!data@{data}}
+\index{data@{data}!CircularLinkedList$<$ T $>$::Node@{CircularLinkedList$<$ T $>$::Node}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::\+Node\+::data}
+
+
+
+\doxylink{structCircularLinkedList_1_1Node}{Node} data. 
+
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00025}{25}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+\Hypertarget{structCircularLinkedList_1_1Node_ae5a8ecbd90b92821ef31d4a351551ac1}\label{structCircularLinkedList_1_1Node_ae5a8ecbd90b92821ef31d4a351551ac1} 
+\index{CircularLinkedList$<$ T $>$::Node@{CircularLinkedList$<$ T $>$::Node}!next@{next}}
+\index{next@{next}!CircularLinkedList$<$ T $>$::Node@{CircularLinkedList$<$ T $>$::Node}}
+\doxysubsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{structCircularLinkedList_1_1Node}{Node}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::\+Node\+::next}
+
+
+
+Pointer to next node. 
+
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00026}{26}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+\Hypertarget{structCircularLinkedList_1_1Node_addda6f06adb20c4d9fa2629fcafeaee5}\label{structCircularLinkedList_1_1Node_addda6f06adb20c4d9fa2629fcafeaee5} 
+\index{CircularLinkedList$<$ T $>$::Node@{CircularLinkedList$<$ T $>$::Node}!prev@{prev}}
+\index{prev@{prev}!CircularLinkedList$<$ T $>$::Node@{CircularLinkedList$<$ T $>$::Node}}
+\doxysubsubsection{\texorpdfstring{prev}{prev}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{structCircularLinkedList_1_1Node}{Node}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::\+Node\+::prev}
+
+
+
+Pointer to previous node. 
+
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00027}{27}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{CircularLinkedList_8h}{Circular\+Linked\+List.\+h}}\end{DoxyCompactItemize}

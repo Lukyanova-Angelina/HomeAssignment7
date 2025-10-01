@@ -1,0 +1,7 @@
+<map id="CircularLinkedList::push_front" name="CircularLinkedList::push_front">
+<area shape="rect" id="Node000001" title="Add element to the beginning." alt="" coords="5,5,143,45"/>
+<area shape="rect" id="Node000002" href="$classCircularLinkedList.html#ab85b1b232ff4db03f4e0279a951637a0" title="Add element to the end." alt="" coords="191,5,328,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,23,177,23,177,28,143,28"/>
+<area shape="rect" id="Node000003" href="$classCircularLinkedList.html#a8436a0177cb8927954f142c8d2ccfd93" title="Check if list is empty." alt="" coords="376,5,513,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="328,23,362,23,362,28,328,28"/>
+</map>

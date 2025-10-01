@@ -1,3 +1,6 @@
+/* Lukyanova Angelina st128743@student.spbu.ru
+ * Home assignment 7 - Circular list
+ */
 #include "CircularLinkedList.h"
 #include "gtest/gtest.h"
 #include <vector>

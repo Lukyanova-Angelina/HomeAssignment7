@@ -1,0 +1,7 @@
+<map id="CircularLinkedList::CircularLinkedList" name="CircularLinkedList::CircularLinkedList">
+<area shape="rect" id="Node000001" title="Copy constructor." alt="" coords="5,5,151,45"/>
+<area shape="rect" id="Node000002" href="$classCircularLinkedList.html#ab85b1b232ff4db03f4e0279a951637a0" title="Add element to the end." alt="" coords="199,5,336,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,23,185,23,185,28,151,28"/>
+<area shape="rect" id="Node000003" href="$classCircularLinkedList.html#a8436a0177cb8927954f142c8d2ccfd93" title="Check if list is empty." alt="" coords="384,5,521,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="336,23,370,23,370,28,336,28"/>
+</map>

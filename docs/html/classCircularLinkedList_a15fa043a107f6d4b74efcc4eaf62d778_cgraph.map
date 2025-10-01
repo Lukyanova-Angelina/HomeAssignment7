@@ -1,0 +1,10 @@
+<map id="CircularLinkedList::insert" name="CircularLinkedList::insert">
+<area shape="rect" id="Node000001" title="Insert element before position." alt="" coords="5,17,143,57"/>
+<area shape="rect" id="Node000002" href="$classCircularLinkedList.html#a8436a0177cb8927954f142c8d2ccfd93" title="Check if list is empty." alt="" coords="408,21,545,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,17,190,9,275,3,360,9,396,16,395,21,360,15,275,8,191,15,144,23"/>
+<area shape="rect" id="Node000003" href="$classCircularLinkedList.html#a5a6d37c4e6f392a46ae7be6a60a77960" title="Iterator to end of list." alt="" coords="191,25,360,50"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="143,35,177,35,177,40,143,40"/>
+<area shape="rect" id="Node000004" href="$classCircularLinkedList.html#ab85b1b232ff4db03f4e0279a951637a0" title="Add element to the end." alt="" coords="207,75,344,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="144,54,194,69,193,74,142,60"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="344,74,394,60,395,66,345,79"/>
+</map>
