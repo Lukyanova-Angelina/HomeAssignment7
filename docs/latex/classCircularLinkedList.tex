@@ -1,0 +1,1682 @@
+\doxysection{Circular\+Linked\+List\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classCircularLinkedList}{}\label{classCircularLinkedList}\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+
+
+Template class for circular doubly linked list.  
+
+
+
+
+{\ttfamily \#include $<$Circular\+Linked\+List.\+h$>$}
+
+
+
+Collaboration diagram for Circular\+Linked\+List\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classCircularLinkedList__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classCircularLinkedList_1_1const__iterator}{const\+\_\+iterator}}
+\begin{DoxyCompactList}\small\item\em Const iterator for \doxylink{classCircularLinkedList}{Circular\+Linked\+List}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classCircularLinkedList_1_1iterator}{iterator}}
+\begin{DoxyCompactList}\small\item\em Iterator for \doxylink{classCircularLinkedList}{Circular\+Linked\+List}. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structCircularLinkedList_1_1Node}{Node}}
+\begin{DoxyCompactList}\small\item\em Internal node structure of the list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{using}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{reverse\+\_\+iterator}} = std\+::reverse\+\_\+iterator$<$ \mbox{\hyperlink{classCircularLinkedList_1_1iterator}{iterator}} $>$
+\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{using}} \mbox{\hyperlink{classCircularLinkedList_a7fa4e348e25be064c6cf740b0ab1d649}{const\+\_\+reverse\+\_\+iterator}} = std\+::reverse\+\_\+iterator$<$ \mbox{\hyperlink{classCircularLinkedList_1_1const__iterator}{const\+\_\+iterator}} $>$
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCircularLinkedList_a14c1c7f70c9eec0a2bbda29b6819e44b}{Circular\+Linked\+List}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a849dcf92d742144b5f326a8a1df874e5}{Circular\+Linked\+List}} (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}} \&\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}})
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_ad7a919fc0c010786ab092c3926bc85e0}{Circular\+Linked\+List}} (\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}} \&\&\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}) \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{noexcept}}
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a3248c1de21470e7899c294ad7eeaa57a}{\texorpdfstring{$\sim$}{\string~}\+Circular\+Linked\+List}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}} \& \mbox{\hyperlink{classCircularLinkedList_aecdb2cf9b2580a5e3d7c5c085f02a73d}{operator=}} (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}} \&\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}})
+\begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}} \& \mbox{\hyperlink{classCircularLinkedList_a4c10d3bb0969d51ef13d49cc88f17d19}{operator=}} (\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}} \&\&\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}) \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{noexcept}}
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{bool}} \mbox{\hyperlink{classCircularLinkedList_a8436a0177cb8927954f142c8d2ccfd93}{empty}} () \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}}
+\begin{DoxyCompactList}\small\item\em Check if list is empty. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{size\+\_\+t}} \mbox{\hyperlink{classCircularLinkedList_a45a0629cdd4e13aeb39e7688408c6f66}{size}} () \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}}
+\begin{DoxyCompactList}\small\item\em Get number of elements. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} \& \mbox{\hyperlink{classCircularLinkedList_a4544d44d3159153a1dcb34f5b7679569}{front}} ()
+\begin{DoxyCompactList}\small\item\em Access first element. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} \& \mbox{\hyperlink{classCircularLinkedList_a575f8f00df8554e6ccb7ce6f1c1b40aa}{back}} ()
+\begin{DoxyCompactList}\small\item\em Access last element. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} \& \mbox{\hyperlink{classCircularLinkedList_a83a49573d1ac718f67ea52778969908f}{front}} () \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}}
+\begin{DoxyCompactList}\small\item\em Const access to first element. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} \& \mbox{\hyperlink{classCircularLinkedList_a01c72068384e9ec32e9dbdf05d47490f}{back}} () \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}}
+\begin{DoxyCompactList}\small\item\em Const access to last element. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{void}} \mbox{\hyperlink{classCircularLinkedList_a1df3d9dbee88370b95041f6557b5dd3f}{push\+\_\+front}} (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} \&\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{value}})
+\begin{DoxyCompactList}\small\item\em Add element to the beginning. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{void}} \mbox{\hyperlink{classCircularLinkedList_ab85b1b232ff4db03f4e0279a951637a0}{push\+\_\+back}} (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} \&\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{value}})
+\begin{DoxyCompactList}\small\item\em Add element to the end. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{void}} \mbox{\hyperlink{classCircularLinkedList_a0c43c6b0d2623d8c65e94ee02983169e}{pop\+\_\+front}} ()
+\begin{DoxyCompactList}\small\item\em Remove first element. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{void}} \mbox{\hyperlink{classCircularLinkedList_a773f536d29989b0fa64ccdcdfd896fd5}{pop\+\_\+back}} ()
+\begin{DoxyCompactList}\small\item\em Remove last element. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{void}} \mbox{\hyperlink{classCircularLinkedList_a44b06ab6e05764613a20b72985e90250}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Clear the list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_1_1iterator}{iterator}} \mbox{\hyperlink{classCircularLinkedList_a15fa043a107f6d4b74efcc4eaf62d778}{insert}} (\mbox{\hyperlink{classCircularLinkedList_1_1iterator}{iterator}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{pos}}, \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} \&\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{value}})
+\begin{DoxyCompactList}\small\item\em Insert element before position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_1_1iterator}{iterator}} \mbox{\hyperlink{classCircularLinkedList_a47f654d80ad90cb4c3992946c909d089}{erase}} (\mbox{\hyperlink{classCircularLinkedList_1_1iterator}{iterator}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{pos}})
+\begin{DoxyCompactList}\small\item\em Remove element at position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{void}} \mbox{\hyperlink{classCircularLinkedList_a89f368dc6bebade45703998f9b055055}{assign}} (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{size\+\_\+t}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{n}}, \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} \&\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{value}})
+\begin{DoxyCompactList}\small\item\em Replace list content. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{void}} \mbox{\hyperlink{classCircularLinkedList_a6488ca3b22fb88bc7c1eddf2f4447751}{swap}} (\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}} \&\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}) \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{noexcept}}
+\begin{DoxyCompactList}\small\item\em Swap content with another list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_1_1iterator}{iterator}} \mbox{\hyperlink{classCircularLinkedList_a2090cf25850476adc1ccd4975188023a}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Iterator to beginning of list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_1_1iterator}{iterator}} \mbox{\hyperlink{classCircularLinkedList_a5a6d37c4e6f392a46ae7be6a60a77960}{end}} ()
+\begin{DoxyCompactList}\small\item\em Iterator to end of list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_1_1const__iterator}{const\+\_\+iterator}} \mbox{\hyperlink{classCircularLinkedList_aa63d5a441a7008064eb17d0bfe606a08}{begin}} () \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}}
+\begin{DoxyCompactList}\small\item\em Const iterator to beginning of list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_1_1const__iterator}{const\+\_\+iterator}} \mbox{\hyperlink{classCircularLinkedList_a618effe539516458bc876264e85d5f51}{end}} () \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}}
+\begin{DoxyCompactList}\small\item\em Const iterator to end of list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_1_1const__iterator}{const\+\_\+iterator}} \mbox{\hyperlink{classCircularLinkedList_a306f3305dac99d1d6cc9763594344c86}{cbegin}} () \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}}
+\begin{DoxyCompactList}\small\item\em Const iterator to beginning of list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_1_1const__iterator}{const\+\_\+iterator}} \mbox{\hyperlink{classCircularLinkedList_a71e0be64b13918ab239c6f833c9849b8}{cend}} () \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}}
+\begin{DoxyCompactList}\small\item\em Const iterator to end of list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{reverse\+\_\+iterator}} \mbox{\hyperlink{classCircularLinkedList_a0e9d9a048176c68fb0f9aa040421f7e0}{rbegin}} ()
+\begin{DoxyCompactList}\small\item\em Reverse iterator to beginning of reversed list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{reverse\+\_\+iterator}} \mbox{\hyperlink{classCircularLinkedList_a0755411c1b79a482562510c0ee6ab2d7}{rend}} ()
+\begin{DoxyCompactList}\small\item\em Reverse iterator to end of reversed list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a7fa4e348e25be064c6cf740b0ab1d649}{const\+\_\+reverse\+\_\+iterator}} \mbox{\hyperlink{classCircularLinkedList_a1568c1cea4b78c739838e2bccbd669e9}{rbegin}} () \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}}
+\begin{DoxyCompactList}\small\item\em Const reverse iterator to beginning of reversed list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a7fa4e348e25be064c6cf740b0ab1d649}{const\+\_\+reverse\+\_\+iterator}} \mbox{\hyperlink{classCircularLinkedList_a35568caca5de0678cefdfc7f9f61a734}{rend}} () \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}}
+\begin{DoxyCompactList}\small\item\em Const reverse iterator to end of reversed list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a7fa4e348e25be064c6cf740b0ab1d649}{const\+\_\+reverse\+\_\+iterator}} \mbox{\hyperlink{classCircularLinkedList_a171c7dd2eafbac37382106282ee10ba0}{crbegin}} () \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}}
+\begin{DoxyCompactList}\small\item\em Const reverse iterator to beginning of reversed list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a7fa4e348e25be064c6cf740b0ab1d649}{const\+\_\+reverse\+\_\+iterator}} \mbox{\hyperlink{classCircularLinkedList_a8ce115884e6649d87e2a6aa53798782d}{crend}} () \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}}
+\begin{DoxyCompactList}\small\item\em Const reverse iterator to end of reversed list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{bool}} \mbox{\hyperlink{classCircularLinkedList_a3dfbee6fc8c533dadcc5377c0da6fd8f}{operator==}} (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}} \&\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}) \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}}
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{bool}} \mbox{\hyperlink{classCircularLinkedList_af6ac69c1a9892b19ee136c64d7353cea}{operator!=}} (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}} \&\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}) \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}}
+\begin{DoxyCompactList}\small\item\em Inequality operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{bool}} \mbox{\hyperlink{classCircularLinkedList_ab0d026bc229f51244d31a0786c09a6e1}{operator$<$}} (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}} \&\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}) \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}}
+\begin{DoxyCompactList}\small\item\em Less than operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{bool}} \mbox{\hyperlink{classCircularLinkedList_a3d4c86e33cdaa0766aadc8f352107245}{operator$>$}} (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}} \&\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}) \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}}
+\begin{DoxyCompactList}\small\item\em Greater than operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{bool}} \mbox{\hyperlink{classCircularLinkedList_a6a6611161767b48bf5cc9bae2978f540}{operator$<$=}} (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}} \&\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}) \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}}
+\begin{DoxyCompactList}\small\item\em Less than or equal operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{bool}} \mbox{\hyperlink{classCircularLinkedList_af128e4d8d2741ac79971fb92e81be892}{operator$>$=}} (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}} \&\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}) \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}}
+\begin{DoxyCompactList}\small\item\em Greater than or equal operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structCircularLinkedList_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}
+\begin{DoxyCompactList}\small\item\em Pointer to the head element of the list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{size\+\_\+t}} \mbox{\hyperlink{classCircularLinkedList_a14e5be4f8e14f7f82b266b5b3b8cd139}{\+\_\+size}}
+\begin{DoxyCompactList}\small\item\em Number of elements in the list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}}$>$\newline
+class Circular\+Linked\+List$<$ T $>$}
+Template class for circular doubly linked list. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of elements in the list \\
+\hline
+\end{DoxyTemplParams}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00018}{18}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\Hypertarget{classCircularLinkedList_a7fa4e348e25be064c6cf740b0ab1d649}\label{classCircularLinkedList_a7fa4e348e25be064c6cf740b0ab1d649} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!const\_reverse\_iterator@{const\_reverse\_iterator}}
+\index{const\_reverse\_iterator@{const\_reverse\_iterator}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{const\_reverse\_iterator}{const\_reverse\_iterator}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{using}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::const\+\_\+reverse\+\_\+iterator =  std\+::reverse\+\_\+iterator$<$\mbox{\hyperlink{classCircularLinkedList_1_1const__iterator}{const\+\_\+iterator}}$>$}
+
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00186}{186}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+\Hypertarget{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}\label{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!reverse\_iterator@{reverse\_iterator}}
+\index{reverse\_iterator@{reverse\_iterator}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{reverse\_iterator}{reverse\_iterator}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{using}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::reverse\+\_\+iterator =  std\+::reverse\+\_\+iterator$<$\mbox{\hyperlink{classCircularLinkedList_1_1iterator}{iterator}}$>$}
+
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00185}{185}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classCircularLinkedList_a14c1c7f70c9eec0a2bbda29b6819e44b}\label{classCircularLinkedList_a14c1c7f70c9eec0a2bbda29b6819e44b} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!CircularLinkedList@{CircularLinkedList}}
+\index{CircularLinkedList@{CircularLinkedList}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CircularLinkedList()}{CircularLinkedList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList}{\+::\+Circular\+Linked\+List}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00474}{474}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00474\ :\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}(\textcolor{keyword}{nullptr}),\ \mbox{\hyperlink{classCircularLinkedList_a14e5be4f8e14f7f82b266b5b3b8cd139}{\_size}}(0)\ \{\}}
+
+\end{DoxyCode}
+\Hypertarget{classCircularLinkedList_a849dcf92d742144b5f326a8a1df874e5}\label{classCircularLinkedList_a849dcf92d742144b5f326a8a1df874e5} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!CircularLinkedList@{CircularLinkedList}}
+\index{CircularLinkedList@{CircularLinkedList}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CircularLinkedList()}{CircularLinkedList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList}{\+::\+Circular\+Linked\+List}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & List to copy from \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00477}{477}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00477\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}(\textcolor{keyword}{nullptr}),\ \mbox{\hyperlink{classCircularLinkedList_a14e5be4f8e14f7f82b266b5b3b8cd139}{\_size}}(0)\ \{}
+\DoxyCodeLine{00478\ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.empty())\ \{}
+\DoxyCodeLine{00479\ \ \ \ \ \ \ \ \ Node*\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{otherCurrent}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.head;}
+\DoxyCodeLine{00480\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{do}\ \{}
+\DoxyCodeLine{00481\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_ab85b1b232ff4db03f4e0279a951637a0}{push\_back}}(\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{otherCurrent}}-\/>data);}
+\DoxyCodeLine{00482\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{otherCurrent}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{otherCurrent}}-\/>next;}
+\DoxyCodeLine{00483\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{while}\ (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{otherCurrent}}\ !=\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.head);}
+\DoxyCodeLine{00484\ \ \ \ \ \}}
+\DoxyCodeLine{00485\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCircularLinkedList_a849dcf92d742144b5f326a8a1df874e5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_ad7a919fc0c010786ab092c3926bc85e0}\label{classCircularLinkedList_ad7a919fc0c010786ab092c3926bc85e0} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!CircularLinkedList@{CircularLinkedList}}
+\index{CircularLinkedList@{CircularLinkedList}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CircularLinkedList()}{CircularLinkedList()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList}{\+::\+Circular\+Linked\+List}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Move constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & List to move from \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00488}{488}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00488\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}(\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.head),\ \mbox{\hyperlink{classCircularLinkedList_a14e5be4f8e14f7f82b266b5b3b8cd139}{\_size}}(\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.\_size)\ \{}
+\DoxyCodeLine{00489\ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.head\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00490\ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.\_size\ =\ 0;}
+\DoxyCodeLine{00491\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classCircularLinkedList_a3248c1de21470e7899c294ad7eeaa57a}\label{classCircularLinkedList_a3248c1de21470e7899c294ad7eeaa57a} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!````~CircularLinkedList@{\texorpdfstring{$\sim$}{\string~}CircularLinkedList}}
+\index{````~CircularLinkedList@{\texorpdfstring{$\sim$}{\string~}CircularLinkedList}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CircularLinkedList()}{\string~CircularLinkedList()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00494}{494}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00494\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00495\ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a44b06ab6e05764613a20b72985e90250}{clear}}();}
+\DoxyCodeLine{00496\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCircularLinkedList_a3248c1de21470e7899c294ad7eeaa57a_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCircularLinkedList_a89f368dc6bebade45703998f9b055055}\label{classCircularLinkedList_a89f368dc6bebade45703998f9b055055} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!assign@{assign}}
+\index{assign@{assign}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{assign()}{assign()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{void}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::assign (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{size\+\_\+t}}}]{n,  }\item[{\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Replace list content. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of elements \\
+\hline
+{\em value} & Value to fill with \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00633}{633}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00633\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00634\ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a44b06ab6e05764613a20b72985e90250}{clear}}();}
+\DoxyCodeLine{00635\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{i}}\ =\ 0;\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{i}}\ <\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{n}};\ ++\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{i}})\ \{}
+\DoxyCodeLine{00636\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_ab85b1b232ff4db03f4e0279a951637a0}{push\_back}}(\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{value}});}
+\DoxyCodeLine{00637\ \ \ \ \ \}}
+\DoxyCodeLine{00638\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCircularLinkedList_a89f368dc6bebade45703998f9b055055_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a575f8f00df8554e6ccb7ce6f1c1b40aa}\label{classCircularLinkedList_a575f8f00df8554e6ccb7ce6f1c1b40aa} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!back@{back}}
+\index{back@{back}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{back()}{back()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} \& \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Access last element. 
+
+\begin{DoxyReturn}{Returns}
+Reference to last element 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & if list is empty \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00557}{557}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00557\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00558\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_a8436a0177cb8927954f142c8d2ccfd93}{empty}}())\ \textcolor{keywordflow}{throw}\ std::out\_of\_range(\textcolor{stringliteral}{"{}CircularLinkedList::back:\ empty\ list"{}});}
+\DoxyCodeLine{00559\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_addda6f06adb20c4d9fa2629fcafeaee5}{prev}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_a780e86ea8aa229119d9053cf2613b3dc}{data}};}
+\DoxyCodeLine{00560\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classCircularLinkedList_a575f8f00df8554e6ccb7ce6f1c1b40aa_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a01c72068384e9ec32e9dbdf05d47490f}\label{classCircularLinkedList_a01c72068384e9ec32e9dbdf05d47490f} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!back@{back}}
+\index{back@{back}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{back()}{back()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} \& \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Const access to last element. 
+
+\begin{DoxyReturn}{Returns}
+Const reference to last element 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & if list is empty \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00563}{563}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00563\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00564\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_a8436a0177cb8927954f142c8d2ccfd93}{empty}}())\ \textcolor{keywordflow}{throw}\ std::out\_of\_range(\textcolor{stringliteral}{"{}CircularLinkedList::back:\ empty\ list"{}});}
+\DoxyCodeLine{00565\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_addda6f06adb20c4d9fa2629fcafeaee5}{prev}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_a780e86ea8aa229119d9053cf2613b3dc}{data}};}
+\DoxyCodeLine{00566\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classCircularLinkedList_a01c72068384e9ec32e9dbdf05d47490f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a2090cf25850476adc1ccd4975188023a}\label{classCircularLinkedList_a2090cf25850476adc1ccd4975188023a} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!begin@{begin}}
+\index{begin@{begin}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::iterator \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Iterator to beginning of list. 
+
+\begin{DoxyReturn}{Returns}
+Iterator to first element 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00701}{701}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00701\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00702\ \ \ \ \ \textcolor{keywordflow}{return}\ iterator(\mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}},\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}});}
+\DoxyCodeLine{00703\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCircularLinkedList_a2090cf25850476adc1ccd4975188023a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_aa63d5a441a7008064eb17d0bfe606a08}\label{classCircularLinkedList_aa63d5a441a7008064eb17d0bfe606a08} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!begin@{begin}}
+\index{begin@{begin}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::const\+\_\+iterator \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Const iterator to beginning of list. 
+
+\begin{DoxyReturn}{Returns}
+Const iterator to first element 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00712}{712}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00712\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00713\ \ \ \ \ \textcolor{keywordflow}{return}\ const\_iterator(\mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}},\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}});}
+\DoxyCodeLine{00714\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classCircularLinkedList_a306f3305dac99d1d6cc9763594344c86}\label{classCircularLinkedList_a306f3305dac99d1d6cc9763594344c86} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!cbegin@{cbegin}}
+\index{cbegin@{cbegin}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{cbegin()}{cbegin()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::const\+\_\+iterator \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::cbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Const iterator to beginning of list. 
+
+\begin{DoxyReturn}{Returns}
+Const iterator to first element 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00725}{725}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00725\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00726\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_a2090cf25850476adc1ccd4975188023a}{begin}}();}
+\DoxyCodeLine{00727\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classCircularLinkedList_a306f3305dac99d1d6cc9763594344c86_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a71e0be64b13918ab239c6f833c9849b8}\label{classCircularLinkedList_a71e0be64b13918ab239c6f833c9849b8} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!cend@{cend}}
+\index{cend@{cend}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{cend()}{cend()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::const\+\_\+iterator \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::cend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Const iterator to end of list. 
+
+\begin{DoxyReturn}{Returns}
+Const iterator to position after last element 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00730}{730}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00730\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00731\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_a5a6d37c4e6f392a46ae7be6a60a77960}{end}}();}
+\DoxyCodeLine{00732\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classCircularLinkedList_a71e0be64b13918ab239c6f833c9849b8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a44b06ab6e05764613a20b72985e90250}\label{classCircularLinkedList_a44b06ab6e05764613a20b72985e90250} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!clear@{clear}}
+\index{clear@{clear}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{void}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clear the list. 
+
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00626}{626}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00626\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00627\ \ \ \ \ \textcolor{keywordflow}{while}\ (!\mbox{\hyperlink{classCircularLinkedList_a8436a0177cb8927954f142c8d2ccfd93}{empty}}())\ \{}
+\DoxyCodeLine{00628\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a0c43c6b0d2623d8c65e94ee02983169e}{pop\_front}}();}
+\DoxyCodeLine{00629\ \ \ \ \ \}}
+\DoxyCodeLine{00630\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCircularLinkedList_a44b06ab6e05764613a20b72985e90250_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classCircularLinkedList_a44b06ab6e05764613a20b72985e90250_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a171c7dd2eafbac37382106282ee10ba0}\label{classCircularLinkedList_a171c7dd2eafbac37382106282ee10ba0} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!crbegin@{crbegin}}
+\index{crbegin@{crbegin}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{crbegin()}{crbegin()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList_a7fa4e348e25be064c6cf740b0ab1d649}{\+::const\+\_\+reverse\+\_\+iterator}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::crbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Const reverse iterator to beginning of reversed list. 
+
+\begin{DoxyReturn}{Returns}
+Const reverse iterator to last element 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00759}{759}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00759\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00760\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_a0e9d9a048176c68fb0f9aa040421f7e0}{rbegin}}();}
+\DoxyCodeLine{00761\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCircularLinkedList_a171c7dd2eafbac37382106282ee10ba0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a8ce115884e6649d87e2a6aa53798782d}\label{classCircularLinkedList_a8ce115884e6649d87e2a6aa53798782d} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!crend@{crend}}
+\index{crend@{crend}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{crend()}{crend()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList_a7fa4e348e25be064c6cf740b0ab1d649}{\+::const\+\_\+reverse\+\_\+iterator}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::crend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Const reverse iterator to end of reversed list. 
+
+\begin{DoxyReturn}{Returns}
+Const reverse iterator to position before first element 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00765}{765}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00765\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00766\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_a0755411c1b79a482562510c0ee6ab2d7}{rend}}();}
+\DoxyCodeLine{00767\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCircularLinkedList_a8ce115884e6649d87e2a6aa53798782d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a8436a0177cb8927954f142c8d2ccfd93}\label{classCircularLinkedList_a8436a0177cb8927954f142c8d2ccfd93} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!empty@{empty}}
+\index{empty@{empty}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{bool}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Check if list is empty. 
+
+\begin{DoxyReturn}{Returns}
+true if list is empty, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00533}{533}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00533\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00534\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_a14e5be4f8e14f7f82b266b5b3b8cd139}{\_size}}\ ==\ 0;}
+\DoxyCodeLine{00535\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCircularLinkedList_a8436a0177cb8927954f142c8d2ccfd93_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a5a6d37c4e6f392a46ae7be6a60a77960}\label{classCircularLinkedList_a5a6d37c4e6f392a46ae7be6a60a77960} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!end@{end}}
+\index{end@{end}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::iterator \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Iterator to end of list. 
+
+\begin{DoxyReturn}{Returns}
+Iterator to position after last element 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00706}{706}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00706\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{\ }
+\DoxyCodeLine{00707\ \ \ \ \ \textcolor{keywordflow}{return}\ iterator(\textcolor{keyword}{nullptr},\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}});}
+\DoxyCodeLine{00708\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCircularLinkedList_a5a6d37c4e6f392a46ae7be6a60a77960_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a618effe539516458bc876264e85d5f51}\label{classCircularLinkedList_a618effe539516458bc876264e85d5f51} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!end@{end}}
+\index{end@{end}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::const\+\_\+iterator \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Const iterator to end of list. 
+
+\begin{DoxyReturn}{Returns}
+Const iterator to position after last element 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00717}{717}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00717\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{\ }
+\DoxyCodeLine{00718\ \ \ \ \ \textcolor{keywordflow}{return}\ const\_iterator(\textcolor{keyword}{nullptr},\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}});}
+\DoxyCodeLine{00719\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classCircularLinkedList_a47f654d80ad90cb4c3992946c909d089}\label{classCircularLinkedList_a47f654d80ad90cb4c3992946c909d089} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!erase@{erase}}
+\index{erase@{erase}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::iterator \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCircularLinkedList_1_1iterator}{iterator}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Remove element at position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Iterator to position for removal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Iterator to next element 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & if list is empty \\
+\hline
+{\em std\+::invalid\+\_\+argument} & if pos = \doxylink{classCircularLinkedList_a5a6d37c4e6f392a46ae7be6a60a77960}{end()} \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00932}{932}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00932\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00933\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_a8436a0177cb8927954f142c8d2ccfd93}{empty}}())\ \textcolor{keywordflow}{throw}\ std::out\_of\_range(\textcolor{stringliteral}{"{}CircularLinkedList::erase:\ empty\ list"{}});}
+\DoxyCodeLine{00934\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{pos}}\ ==\ \mbox{\hyperlink{classCircularLinkedList_a5a6d37c4e6f392a46ae7be6a60a77960}{end}}())\ \textcolor{keywordflow}{throw}\ std::invalid\_argument(\textcolor{stringliteral}{"{}CircularLinkedList::erase:\ cannot\ erase\ end\ iterator"{}});}
+\DoxyCodeLine{00935\ \ \ \ \ Node*\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{toDelete}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{pos}}.current;}
+\DoxyCodeLine{00936\ \ \ \ \ Node*\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{nextNode}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{toDelete}}-\/>next;}
+\DoxyCodeLine{00937\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_a14e5be4f8e14f7f82b266b5b3b8cd139}{\_size}}\ ==\ 1)\ \{}
+\DoxyCodeLine{00938\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{toDelete}};}
+\DoxyCodeLine{00939\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00940\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a14e5be4f8e14f7f82b266b5b3b8cd139}{\_size}}\ =\ 0;}
+\DoxyCodeLine{00941\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_a5a6d37c4e6f392a46ae7be6a60a77960}{end}}();}
+\DoxyCodeLine{00942\ \ \ \ \ \}}
+\DoxyCodeLine{00943\ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{toDelete}}-\/>prev-\/>next\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{toDelete}}-\/>next;}
+\DoxyCodeLine{00944\ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{toDelete}}-\/>next-\/>prev\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{toDelete}}-\/>prev;}
+\DoxyCodeLine{00945\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{toDelete}}\ ==\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}})\ \{}
+\DoxyCodeLine{00946\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_ae5a8ecbd90b92821ef31d4a351551ac1}{next}};}
+\DoxyCodeLine{00947\ \ \ \ \ \}}
+\DoxyCodeLine{00948\ \ \ \ \ \textcolor{keyword}{delete}\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{toDelete}};}
+\DoxyCodeLine{00949\ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a14e5be4f8e14f7f82b266b5b3b8cd139}{\_size}}-\/-\/;}
+\DoxyCodeLine{00950\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_a8436a0177cb8927954f142c8d2ccfd93}{empty}}())\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_a5a6d37c4e6f392a46ae7be6a60a77960}{end}}();}
+\DoxyCodeLine{00951\ \ \ \ \ \textcolor{keywordflow}{return}\ iterator(\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{nextNode}},\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}});}
+\DoxyCodeLine{00952\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classCircularLinkedList_a47f654d80ad90cb4c3992946c909d089_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a4544d44d3159153a1dcb34f5b7679569}\label{classCircularLinkedList_a4544d44d3159153a1dcb34f5b7679569} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!front@{front}}
+\index{front@{front}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{front()}{front()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} \& \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Access first element. 
+
+\begin{DoxyReturn}{Returns}
+Reference to first element 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & if list is empty \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00545}{545}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00545\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00546\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_a8436a0177cb8927954f142c8d2ccfd93}{empty}}())\ \textcolor{keywordflow}{throw}\ std::out\_of\_range(\textcolor{stringliteral}{"{}CircularLinkedList::front:\ empty\ list"{}});}
+\DoxyCodeLine{00547\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_a780e86ea8aa229119d9053cf2613b3dc}{data}};}
+\DoxyCodeLine{00548\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classCircularLinkedList_a4544d44d3159153a1dcb34f5b7679569_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a83a49573d1ac718f67ea52778969908f}\label{classCircularLinkedList_a83a49573d1ac718f67ea52778969908f} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!front@{front}}
+\index{front@{front}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{front()}{front()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} \& \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Const access to first element. 
+
+\begin{DoxyReturn}{Returns}
+Const reference to first element 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & if list is empty \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00551}{551}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00551\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00552\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_a8436a0177cb8927954f142c8d2ccfd93}{empty}}())\ \textcolor{keywordflow}{throw}\ std::out\_of\_range(\textcolor{stringliteral}{"{}CircularLinkedList::front:\ empty\ list"{}});}
+\DoxyCodeLine{00553\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_a780e86ea8aa229119d9053cf2613b3dc}{data}};}
+\DoxyCodeLine{00554\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classCircularLinkedList_a83a49573d1ac718f67ea52778969908f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a15fa043a107f6d4b74efcc4eaf62d778}\label{classCircularLinkedList_a15fa043a107f6d4b74efcc4eaf62d778} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!insert@{insert}}
+\index{insert@{insert}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::iterator \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCircularLinkedList_1_1iterator}{iterator}}}]{pos,  }\item[{\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Insert element before position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Iterator to position for insertion \\
+\hline
+{\em value} & Value to insert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Iterator to inserted element 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00907}{907}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00907\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00908\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_a8436a0177cb8927954f142c8d2ccfd93}{empty}}())\ \{}
+\DoxyCodeLine{00909\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_ab85b1b232ff4db03f4e0279a951637a0}{push\_back}}(\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{value}});}
+\DoxyCodeLine{00910\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ iterator(\mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}},\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}});}
+\DoxyCodeLine{00911\ \ \ \ \ \}}
+\DoxyCodeLine{00912\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{pos}}\ ==\ \mbox{\hyperlink{classCircularLinkedList_a5a6d37c4e6f392a46ae7be6a60a77960}{end}}())\ \{}
+\DoxyCodeLine{00913\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_ab85b1b232ff4db03f4e0279a951637a0}{push\_back}}(\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{value}});}
+\DoxyCodeLine{00914\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ iterator(\mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_addda6f06adb20c4d9fa2629fcafeaee5}{prev}},\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}});}
+\DoxyCodeLine{00915\ \ \ \ \ \}}
+\DoxyCodeLine{00916\ \ \ \ \ Node*\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{newNode}}\ =\ \textcolor{keyword}{new}\ Node(\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{value}});}
+\DoxyCodeLine{00917\ \ \ \ \ Node*\ current\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{pos}}.current;}
+\DoxyCodeLine{00918\ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{newNode}}-\/>next\ =\ current;}
+\DoxyCodeLine{00919\ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{newNode}}-\/>prev\ =\ current-\/>prev;}
+\DoxyCodeLine{00920\ \ \ \ \ current-\/>prev-\/>next\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{newNode}};}
+\DoxyCodeLine{00921\ \ \ \ \ current-\/>prev\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{newNode}};}
+\DoxyCodeLine{00922\ \ \ \ \ \textcolor{keywordflow}{if}\ (current\ ==\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}})\ \{}
+\DoxyCodeLine{00923\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{newNode}};}
+\DoxyCodeLine{00924\ \ \ \ \ \}}
+\DoxyCodeLine{00925\ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a14e5be4f8e14f7f82b266b5b3b8cd139}{\_size}}++;}
+\DoxyCodeLine{00926\ \ \ \ \ \textcolor{keywordflow}{return}\ iterator(\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{newNode}},\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}});}
+\DoxyCodeLine{00927\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCircularLinkedList_a15fa043a107f6d4b74efcc4eaf62d778_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_af6ac69c1a9892b19ee136c64d7353cea}\label{classCircularLinkedList_af6ac69c1a9892b19ee136c64d7353cea} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{bool}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{\+::operator!}}= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Inequality operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another list to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if lists are not equal 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00662}{662}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00662\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00663\ \ \ \ \ \textcolor{keywordflow}{return}\ !(*\textcolor{keyword}{this}\ ==\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}});}
+\DoxyCodeLine{00664\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classCircularLinkedList_ab0d026bc229f51244d31a0786c09a6e1}\label{classCircularLinkedList_ab0d026bc229f51244d31a0786c09a6e1} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{bool}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{\+::operator}}$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Less than operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another list to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if current list is less than other 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00667}{667}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00667\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00668\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_a8436a0177cb8927954f142c8d2ccfd93}{empty}}()\ \&\&\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.empty())\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00669\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_a8436a0177cb8927954f142c8d2ccfd93}{empty}}())\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00670\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.empty())\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00671\ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{it1}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a2090cf25850476adc1ccd4975188023a}{begin}}();}
+\DoxyCodeLine{00672\ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{it2}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.begin();}
+\DoxyCodeLine{00673\ \ \ \ \ \textcolor{keywordflow}{while}\ (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{it1}}\ !=\ \mbox{\hyperlink{classCircularLinkedList_a5a6d37c4e6f392a46ae7be6a60a77960}{end}}()\ \&\&\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{it2}}\ !=\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.end())\ \{}
+\DoxyCodeLine{00674\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (*\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{it1}}\ <\ *\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{it2}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00675\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (*\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{it2}}\ <\ *\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{it1}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00676\ \ \ \ \ \ \ \ \ ++\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{it1}};}
+\DoxyCodeLine{00677\ \ \ \ \ \ \ \ \ ++\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{it2}};}
+\DoxyCodeLine{00678\ \ \ \ \ \}}
+\DoxyCodeLine{00679\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{it1}}\ ==\ \mbox{\hyperlink{classCircularLinkedList_a5a6d37c4e6f392a46ae7be6a60a77960}{end}}()\ \&\&\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{it2}}\ !=\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.end();}
+\DoxyCodeLine{00680\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classCircularLinkedList_ab0d026bc229f51244d31a0786c09a6e1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a6a6611161767b48bf5cc9bae2978f540}\label{classCircularLinkedList_a6a6611161767b48bf5cc9bae2978f540} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{bool}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{\+::operator}}$<$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Less than or equal operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another list to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if current list is less than or equal to other 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00690}{690}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00690\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00691\ \ \ \ \ \textcolor{keywordflow}{return}\ !(\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}\ <\ *\textcolor{keyword}{this});}
+\DoxyCodeLine{00692\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classCircularLinkedList_a4c10d3bb0969d51ef13d49cc88f17d19}\label{classCircularLinkedList_a4c10d3bb0969d51ef13d49cc88f17d19} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \& \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{\+::operator}}= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Move assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & List to move from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to current object 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00519}{519}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00519\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00520\ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{this}\ !=\ \&\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}})\ \{}
+\DoxyCodeLine{00521\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a44b06ab6e05764613a20b72985e90250}{clear}}();}
+\DoxyCodeLine{00522\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00523\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.head;}
+\DoxyCodeLine{00524\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a14e5be4f8e14f7f82b266b5b3b8cd139}{\_size}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.\_size;}
+\DoxyCodeLine{00525\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00526\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.head\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00527\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.\_size\ =\ 0;}
+\DoxyCodeLine{00528\ \ \ \ \ \}}
+\DoxyCodeLine{00529\ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00530\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCircularLinkedList_a4c10d3bb0969d51ef13d49cc88f17d19_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_aecdb2cf9b2580a5e3d7c5c085f02a73d}\label{classCircularLinkedList_aecdb2cf9b2580a5e3d7c5c085f02a73d} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \& \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{\+::operator}}= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Copy assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & List to copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to current object 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00503}{503}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00503\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00504\ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{this}\ !=\ \&\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}})\ \{}
+\DoxyCodeLine{00505\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a44b06ab6e05764613a20b72985e90250}{clear}}();}
+\DoxyCodeLine{00506\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00507\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.empty())\ \{}
+\DoxyCodeLine{00508\ \ \ \ \ \ \ \ \ \ \ \ \ Node*\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{otherCurrent}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.head;}
+\DoxyCodeLine{00509\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{do}\ \{}
+\DoxyCodeLine{00510\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_ab85b1b232ff4db03f4e0279a951637a0}{push\_back}}(\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{otherCurrent}}-\/>data);}
+\DoxyCodeLine{00511\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{otherCurrent}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{otherCurrent}}-\/>next;}
+\DoxyCodeLine{00512\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{while}\ (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{otherCurrent}}\ !=\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.head);}
+\DoxyCodeLine{00513\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00514\ \ \ \ \ \}}
+\DoxyCodeLine{00515\ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00516\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCircularLinkedList_aecdb2cf9b2580a5e3d7c5c085f02a73d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a3dfbee6fc8c533dadcc5377c0da6fd8f}\label{classCircularLinkedList_a3dfbee6fc8c533dadcc5377c0da6fd8f} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{bool}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{\+::operator}}== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Equality operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another list to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if lists are equal 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00648}{648}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00648\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00649\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_a45a0629cdd4e13aeb39e7688408c6f66}{size}}()\ !=\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.size())\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00650\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_a8436a0177cb8927954f142c8d2ccfd93}{empty}}())\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00651\ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{it1}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a2090cf25850476adc1ccd4975188023a}{begin}}();}
+\DoxyCodeLine{00652\ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{it2}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.begin();}
+\DoxyCodeLine{00653\ \ \ \ \ \textcolor{keywordflow}{while}\ (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{it1}}\ !=\ \mbox{\hyperlink{classCircularLinkedList_a5a6d37c4e6f392a46ae7be6a60a77960}{end}}()\ \&\&\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{it2}}\ !=\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.end())\ \{}
+\DoxyCodeLine{00654\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (*\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{it1}}\ !=\ *\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{it2}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00655\ \ \ \ \ \ \ \ \ ++\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{it1}};}
+\DoxyCodeLine{00656\ \ \ \ \ \ \ \ \ ++\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{it2}};}
+\DoxyCodeLine{00657\ \ \ \ \ \}}
+\DoxyCodeLine{00658\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{it1}}\ ==\ \mbox{\hyperlink{classCircularLinkedList_a5a6d37c4e6f392a46ae7be6a60a77960}{end}}()\ \&\&\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{it2}}\ ==\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.end();}
+\DoxyCodeLine{00659\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classCircularLinkedList_a3dfbee6fc8c533dadcc5377c0da6fd8f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a3d4c86e33cdaa0766aadc8f352107245}\label{classCircularLinkedList_a3d4c86e33cdaa0766aadc8f352107245} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{bool}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{\+::operator}}$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Greater than operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another list to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if current list is greater than other 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00685}{685}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00685\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00686\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}\ <\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00687\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classCircularLinkedList_af128e4d8d2741ac79971fb92e81be892}\label{classCircularLinkedList_af128e4d8d2741ac79971fb92e81be892} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{bool}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{\+::operator}}$>$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Greater than or equal operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another list to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if current list is greater than or equal to other 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00695}{695}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00695\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00696\ \ \ \ \ \textcolor{keywordflow}{return}\ !(*\textcolor{keyword}{this}\ <\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}});}
+\DoxyCodeLine{00697\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classCircularLinkedList_a773f536d29989b0fa64ccdcdfd896fd5}\label{classCircularLinkedList_a773f536d29989b0fa64ccdcdfd896fd5} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!pop\_back@{pop\_back}}
+\index{pop\_back@{pop\_back}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pop\_back()}{pop\_back()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{void}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::pop\+\_\+back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Remove last element. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & if list is empty \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00608}{608}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00608\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00609\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_a8436a0177cb8927954f142c8d2ccfd93}{empty}}())\ \textcolor{keywordflow}{throw}\ std::out\_of\_range(\textcolor{stringliteral}{"{}CircularLinkedList::pop\_back:\ empty\ list"{}});}
+\DoxyCodeLine{00610\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_a14e5be4f8e14f7f82b266b5b3b8cd139}{\_size}}\ ==\ 1)\ \{}
+\DoxyCodeLine{00611\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}};}
+\DoxyCodeLine{00612\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00613\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00614\ \ \ \ \ \ \ \ \ Node*\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{tail}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_addda6f06adb20c4d9fa2629fcafeaee5}{prev}};}
+\DoxyCodeLine{00615\ \ \ \ \ \ \ \ \ Node*\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{newTail}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{tail}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_addda6f06adb20c4d9fa2629fcafeaee5}{prev}};}
+\DoxyCodeLine{00616\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00617\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{newTail}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_ae5a8ecbd90b92821ef31d4a351551ac1}{next}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}};}
+\DoxyCodeLine{00618\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_addda6f06adb20c4d9fa2629fcafeaee5}{prev}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{newTail}};}
+\DoxyCodeLine{00619\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00620\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{tail}};}
+\DoxyCodeLine{00621\ \ \ \ \ \}}
+\DoxyCodeLine{00622\ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a14e5be4f8e14f7f82b266b5b3b8cd139}{\_size}}-\/-\/;}
+\DoxyCodeLine{00623\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classCircularLinkedList_a773f536d29989b0fa64ccdcdfd896fd5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a0c43c6b0d2623d8c65e94ee02983169e}\label{classCircularLinkedList_a0c43c6b0d2623d8c65e94ee02983169e} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!pop\_front@{pop\_front}}
+\index{pop\_front@{pop\_front}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pop\_front()}{pop\_front()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{void}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::pop\+\_\+front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Remove first element. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & if list is empty \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00591}{591}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00591\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00592\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_a8436a0177cb8927954f142c8d2ccfd93}{empty}}())\ \textcolor{keywordflow}{throw}\ std::out\_of\_range(\textcolor{stringliteral}{"{}CircularLinkedList::pop\_front:\ empty\ list"{}});}
+\DoxyCodeLine{00593\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_a14e5be4f8e14f7f82b266b5b3b8cd139}{\_size}}\ ==\ 1)\ \{}
+\DoxyCodeLine{00594\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}};}
+\DoxyCodeLine{00595\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00596\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00597\ \ \ \ \ \ \ \ \ Node*\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{newHead}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_ae5a8ecbd90b92821ef31d4a351551ac1}{next}};}
+\DoxyCodeLine{00598\ \ \ \ \ \ \ \ \ Node*\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{tail}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_addda6f06adb20c4d9fa2629fcafeaee5}{prev}};}
+\DoxyCodeLine{00599\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{newHead}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_addda6f06adb20c4d9fa2629fcafeaee5}{prev}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{tail}};}
+\DoxyCodeLine{00600\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{tail}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_ae5a8ecbd90b92821ef31d4a351551ac1}{next}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{newHead}};}
+\DoxyCodeLine{00601\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}};}
+\DoxyCodeLine{00602\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{newHead}};}
+\DoxyCodeLine{00603\ \ \ \ \ \}}
+\DoxyCodeLine{00604\ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a14e5be4f8e14f7f82b266b5b3b8cd139}{\_size}}-\/-\/;}
+\DoxyCodeLine{00605\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classCircularLinkedList_a0c43c6b0d2623d8c65e94ee02983169e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCircularLinkedList_a0c43c6b0d2623d8c65e94ee02983169e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_ab85b1b232ff4db03f4e0279a951637a0}\label{classCircularLinkedList_ab85b1b232ff4db03f4e0279a951637a0} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{void}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Add element to the end. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value to add \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00574}{574}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00574\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00575\ \ \ \ \ Node*\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{newNode}}\ =\ \textcolor{keyword}{new}\ Node(\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{value}});}
+\DoxyCodeLine{00576\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_a8436a0177cb8927954f142c8d2ccfd93}{empty}}())\ \{}
+\DoxyCodeLine{00577\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{newNode}};}
+\DoxyCodeLine{00578\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00579\ \ \ \ \ \ \ \ \ Node*\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{tail}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_addda6f06adb20c4d9fa2629fcafeaee5}{prev}};}
+\DoxyCodeLine{00580\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00581\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{tail}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_ae5a8ecbd90b92821ef31d4a351551ac1}{next}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{newNode}};}
+\DoxyCodeLine{00582\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{newNode}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_addda6f06adb20c4d9fa2629fcafeaee5}{prev}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{tail}};}
+\DoxyCodeLine{00583\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00584\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{newNode}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_ae5a8ecbd90b92821ef31d4a351551ac1}{next}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}};}
+\DoxyCodeLine{00585\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_addda6f06adb20c4d9fa2629fcafeaee5}{prev}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{newNode}};}
+\DoxyCodeLine{00586\ \ \ \ \ \}}
+\DoxyCodeLine{00587\ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a14e5be4f8e14f7f82b266b5b3b8cd139}{\_size}}++;}
+\DoxyCodeLine{00588\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classCircularLinkedList_ab85b1b232ff4db03f4e0279a951637a0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classCircularLinkedList_ab85b1b232ff4db03f4e0279a951637a0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a1df3d9dbee88370b95041f6557b5dd3f}\label{classCircularLinkedList_a1df3d9dbee88370b95041f6557b5dd3f} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!push\_front@{push\_front}}
+\index{push\_front@{push\_front}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push\_front()}{push\_front()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{void}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::push\+\_\+front (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Add element to the beginning. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value to add \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00569}{569}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00569\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00570\ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_ab85b1b232ff4db03f4e0279a951637a0}{push\_back}}(\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{value}});}
+\DoxyCodeLine{00571\ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}\ =\ \mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_addda6f06adb20c4d9fa2629fcafeaee5}{prev}};}
+\DoxyCodeLine{00572\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCircularLinkedList_a1df3d9dbee88370b95041f6557b5dd3f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a0e9d9a048176c68fb0f9aa040421f7e0}\label{classCircularLinkedList_a0e9d9a048176c68fb0f9aa040421f7e0} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!rbegin@{rbegin}}
+\index{rbegin@{rbegin}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{rbegin()}{rbegin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{\+::reverse\+\_\+iterator}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::rbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reverse iterator to beginning of reversed list. 
+
+\begin{DoxyReturn}{Returns}
+Reverse iterator to last element 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00737}{737}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00737\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00738\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{reverse\_iterator}}(\mbox{\hyperlink{classCircularLinkedList_a5a6d37c4e6f392a46ae7be6a60a77960}{end}}());}
+\DoxyCodeLine{00739\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classCircularLinkedList_a0e9d9a048176c68fb0f9aa040421f7e0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classCircularLinkedList_a0e9d9a048176c68fb0f9aa040421f7e0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a1568c1cea4b78c739838e2bccbd669e9}\label{classCircularLinkedList_a1568c1cea4b78c739838e2bccbd669e9} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!rbegin@{rbegin}}
+\index{rbegin@{rbegin}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{rbegin()}{rbegin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList_a7fa4e348e25be064c6cf740b0ab1d649}{\+::const\+\_\+reverse\+\_\+iterator}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::rbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Const reverse iterator to beginning of reversed list. 
+
+\begin{DoxyReturn}{Returns}
+Const reverse iterator to last element 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00749}{749}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00749\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00750\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_a7fa4e348e25be064c6cf740b0ab1d649}{const\_reverse\_iterator}}(\mbox{\hyperlink{classCircularLinkedList_a5a6d37c4e6f392a46ae7be6a60a77960}{end}}());}
+\DoxyCodeLine{00751\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classCircularLinkedList_a1568c1cea4b78c739838e2bccbd669e9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a0755411c1b79a482562510c0ee6ab2d7}\label{classCircularLinkedList_a0755411c1b79a482562510c0ee6ab2d7} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!rend@{rend}}
+\index{rend@{rend}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{rend()}{rend()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{\+::reverse\+\_\+iterator}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::rend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reverse iterator to end of reversed list. 
+
+\begin{DoxyReturn}{Returns}
+Reverse iterator to position before first element 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00742}{742}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00742\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00743\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{reverse\_iterator}}(\mbox{\hyperlink{classCircularLinkedList_a2090cf25850476adc1ccd4975188023a}{begin}}());}
+\DoxyCodeLine{00744\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classCircularLinkedList_a0755411c1b79a482562510c0ee6ab2d7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classCircularLinkedList_a0755411c1b79a482562510c0ee6ab2d7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a35568caca5de0678cefdfc7f9f61a734}\label{classCircularLinkedList_a35568caca5de0678cefdfc7f9f61a734} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!rend@{rend}}
+\index{rend@{rend}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{rend()}{rend()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList_a7fa4e348e25be064c6cf740b0ab1d649}{\+::const\+\_\+reverse\+\_\+iterator}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::rend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Const reverse iterator to end of reversed list. 
+
+\begin{DoxyReturn}{Returns}
+Const reverse iterator to position before first element 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00754}{754}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00754\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00755\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_a7fa4e348e25be064c6cf740b0ab1d649}{const\_reverse\_iterator}}(\mbox{\hyperlink{classCircularLinkedList_a2090cf25850476adc1ccd4975188023a}{begin}}());}
+\DoxyCodeLine{00756\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classCircularLinkedList_a35568caca5de0678cefdfc7f9f61a734_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a45a0629cdd4e13aeb39e7688408c6f66}\label{classCircularLinkedList_a45a0629cdd4e13aeb39e7688408c6f66} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!size@{size}}
+\index{size@{size}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{size\+\_\+t}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get number of elements. 
+
+\begin{DoxyReturn}{Returns}
+Number of elements in the list 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00538}{538}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00538\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00539\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_a14e5be4f8e14f7f82b266b5b3b8cd139}{\_size}};}
+\DoxyCodeLine{00540\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classCircularLinkedList_a45a0629cdd4e13aeb39e7688408c6f66_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCircularLinkedList_a6488ca3b22fb88bc7c1eddf2f4447751}\label{classCircularLinkedList_a6488ca3b22fb88bc7c1eddf2f4447751} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!swap@{swap}}
+\index{swap@{swap}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{void}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Swap content with another list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another list to swap with \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00641}{641}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00641\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00642\ \ \ \ \ std::swap(\mbox{\hyperlink{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}{head}},\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.head);}
+\DoxyCodeLine{00643\ \ \ \ \ std::swap(\mbox{\hyperlink{classCircularLinkedList_a14e5be4f8e14f7f82b266b5b3b8cd139}{\_size}},\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.\_size);}
+\DoxyCodeLine{00644\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classCircularLinkedList_a14e5be4f8e14f7f82b266b5b3b8cd139}\label{classCircularLinkedList_a14e5be4f8e14f7f82b266b5b3b8cd139} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!\_size@{\_size}}
+\index{\_size@{\_size}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\_size}{\_size}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{size\+\_\+t}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Number of elements in the list. 
+
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00037}{37}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+\Hypertarget{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef}\label{classCircularLinkedList_a99464605302ea3904c42fa0f172a38ef} 
+\index{CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}!head@{head}}
+\index{head@{head}!CircularLinkedList$<$ T $>$@{CircularLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{head}{head}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{structCircularLinkedList_1_1Node}{Node}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::head\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pointer to the head element of the list. 
+
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00036}{36}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{CircularLinkedList_8h}{Circular\+Linked\+List.\+h}}\end{DoxyCompactItemize}

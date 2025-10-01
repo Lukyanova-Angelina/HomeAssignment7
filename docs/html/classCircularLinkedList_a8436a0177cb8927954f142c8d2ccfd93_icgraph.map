@@ -1,0 +1,43 @@
+<map id="CircularLinkedList::empty" name="CircularLinkedList::empty">
+<area shape="rect" id="Node000001" title="Check if list is empty." alt="" coords="588,335,725,375"/>
+<area shape="rect" id="Node000002" href="$classCircularLinkedList.html#a575f8f00df8554e6ccb7ce6f1c1b40aa" title="Access last element." alt="" coords="403,5,540,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="648,322,637,266,616,197,584,124,563,90,538,59,524,47,527,43,542,55,567,87,588,121,621,195,642,265,653,321"/>
+<area shape="rect" id="Node000003" href="$classCircularLinkedList.html#a01c72068384e9ec32e9dbdf05d47490f" title="Const access to last element." alt="" coords="403,69,540,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="643,322,627,280,605,229,575,177,538,130,515,112,518,107,542,126,579,174,609,227,632,278,648,320"/>
+<area shape="rect" id="Node000004" href="$classCircularLinkedList.html#a44b06ab6e05764613a20b72985e90250" title="Clear the list." alt="" coords="213,99,351,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="641,323,626,287,604,246,574,207,538,174,494,150,445,135,396,125,351,121,351,116,397,120,446,129,496,145,542,170,578,203,608,244,631,285,646,320"/>
+<area shape="rect" id="Node000009" href="$classCircularLinkedList.html#a47f654d80ad90cb4c3992946c909d089" title="Remove element at position." alt="" coords="403,363,540,403"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="575,370,541,375,540,370,574,364"/>
+<area shape="rect" id="Node000010" href="$classCircularLinkedList.html#a4544d44d3159153a1dcb34f5b7679569" title="Access first element." alt="" coords="403,427,540,467"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="607,383,541,417,517,429,514,424,539,412,604,379"/>
+<area shape="rect" id="Node000011" href="$classCircularLinkedList.html#a83a49573d1ac718f67ea52778969908f" title="Const access to first element." alt="" coords="403,491,540,531"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="634,387,593,434,542,481,522,493,519,488,538,477,590,431,630,384"/>
+<area shape="rect" id="Node000012" href="$classCircularLinkedList.html#a15fa043a107f6d4b74efcc4eaf62d778" title="Insert element before position." alt="" coords="213,392,351,432"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="574,346,491,343,446,346,403,353,355,371,314,394,311,390,353,366,402,348,446,340,491,337,574,340"/>
+<area shape="rect" id="Node000013" href="$classCircularLinkedList.html#ab0d026bc229f51244d31a0786c09a6e1" title="Less than operator." alt="" coords="403,555,540,595"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="645,389,605,465,576,507,542,545,525,557,522,552,538,541,572,504,601,463,640,386"/>
+<area shape="rect" id="Node000014" href="$classCircularLinkedList.html#a3dfbee6fc8c533dadcc5377c0da6fd8f" title="Equality operator." alt="" coords="403,619,540,659"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="651,389,637,436,615,494,584,555,564,583,542,609,526,621,523,616,538,605,560,580,579,552,610,492,632,434,645,387"/>
+<area shape="rect" id="Node000015" href="$classCircularLinkedList.html#a773f536d29989b0fa64ccdcdfd896fd5" title="Remove last element." alt="" coords="403,683,540,723"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="654,388,644,448,623,523,591,601,568,639,542,673,528,684,524,680,538,669,564,636,586,599,618,521,638,446,649,388"/>
+<area shape="rect" id="Node000016" href="$classCircularLinkedList.html#a0c43c6b0d2623d8c65e94ee02983169e" title="Remove first element." alt="" coords="403,184,540,224"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="629,326,589,282,538,238,519,226,522,222,542,234,592,278,633,322"/>
+<area shape="rect" id="Node000017" href="$classCircularLinkedList.html#ab85b1b232ff4db03f4e0279a951637a0" title="Add element to the end." alt="" coords="403,248,540,288"/>
+<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="600,331,514,291,517,286,602,326"/>
+<area shape="rect" id="Node000005" href="$classCircularLinkedList.html#a89f368dc6bebade45703998f9b055055" title="Replace list content." alt="" coords="15,192,152,232"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="224,147,210,153,126,194,124,189,208,148,222,142"/>
+<area shape="rect" id="Node000006" href="$classCircularLinkedList.html#a4c10d3bb0969d51ef13d49cc88f17d19" title="Move assignment operator." alt="" coords="15,49,152,89"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="199,101,152,89,153,84,201,96"/>
+<area shape="rect" id="Node000007" href="$classCircularLinkedList.html#aecdb2cf9b2580a5e3d7c5c085f02a73d" title="Copy assignment operator." alt="" coords="15,281,152,321"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="216,149,211,152,194,175,186,197,179,220,163,246,142,266,120,283,117,279,139,262,159,242,174,218,181,195,189,173,207,149,212,145"/>
+<area shape="rect" id="Node000008" href="$classCircularLinkedList.html#a3248c1de21470e7899c294ad7eeaa57a" title="Destructor." alt="" coords="5,113,161,153"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="200,127,162,130,161,125,200,122"/>
+<area shape="poly" id="edge16_Node000016_Node000004" title=" " alt="" coords="413,180,354,153,327,141,329,136,356,148,415,176"/>
+<area shape="poly" id="edge18_Node000017_Node000005" title=" " alt="" coords="389,259,152,224,153,219,390,254"/>
+<area shape="poly" id="edge21_Node000017_Node000007" title=" " alt="" coords="424,297,355,332,302,340,249,339,197,333,152,324,153,318,198,328,249,334,302,334,354,327,421,292"/>
+<area shape="poly" id="edge20_Node000017_Node000012" title=" " alt="" coords="419,297,405,309,390,326,381,341,372,358,356,375,330,394,326,390,353,371,368,355,376,339,385,322,401,305,416,293"/>
+<area shape="rect" id="Node000018" href="$classCircularLinkedList.html#a849dcf92d742144b5f326a8a1df874e5" title="Copy constructor." alt="" coords="209,163,355,203"/>
+<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="413,245,326,205,329,200,415,240"/>
+<area shape="rect" id="Node000019" href="$classCircularLinkedList.html#a1df3d9dbee88370b95041f6557b5dd3f" title="Add element to the beginning." alt="" coords="213,277,351,317"/>
+<area shape="poly" id="edge22_Node000017_Node000019" title=" " alt="" coords="389,283,352,289,351,284,389,278"/>
+</map>

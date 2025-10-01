@@ -1,0 +1,10 @@
+<map id="CircularLinkedList::~CircularLinkedList" name="CircularLinkedList::~CircularLinkedList">
+<area shape="rect" id="Node000001" title="Destructor." alt="" coords="5,5,161,45"/>
+<area shape="rect" id="Node000002" href="$classCircularLinkedList.html#a44b06ab6e05764613a20b72985e90250" title="Clear the list." alt="" coords="209,5,347,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,23,195,23,195,28,162,28"/>
+<area shape="rect" id="Node000003" href="$classCircularLinkedList.html#a8436a0177cb8927954f142c8d2ccfd93" title="Check if list is empty." alt="" coords="580,5,717,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="347,20,395,19,532,19,566,20,566,25,532,24,395,24,347,25"/>
+<area shape="rect" id="Node000004" href="$classCircularLinkedList.html#a0c43c6b0d2623d8c65e94ee02983169e" title="Remove first element." alt="" coords="395,33,532,73"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="347,33,381,38,381,44,346,38"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="532,40,566,35,567,40,533,46"/>
+</map>

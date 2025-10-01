@@ -1,7 +1,7 @@
 /* Lukyanova Angelina st128743@student.spbu.ru
  * Home assignment 7 - Circular list
  */
- #ifndef CIRCULARLINKEDLIST_H
+#ifndef CIRCULARLINKEDLIST_H
 #define CIRCULARLINKEDLIST_H
 
 #include <cstddef> 
@@ -9,86 +9,305 @@
 #include <iterator>
 #include <algorithm>
 
+/**
+ * \class CircularLinkedList
+ * \brief Template class for circular doubly linked list
+ * \tparam T Type of elements in the list
+ */
 template<typename T>
 class CircularLinkedList {
 private:
+    /**
+     * \struct Node
+     * \brief Internal node structure of the list
+     */
     struct Node {
-        T data;
-        Node* next;
-        Node* prev;
+        T data;         ///< Node data
+        Node* next;     ///< Pointer to next node
+        Node* prev;     ///< Pointer to previous node
         
+        /**
+         * \brief Node constructor
+         * \param value Value for the node
+         */
         Node(const T& value) : data(value), next(this), prev(this) {}
     };
     
-    Node* head;
-    size_t _size;
+    Node* head;     ///< Pointer to the head element of the list
+    size_t _size;   ///< Number of elements in the list
 
 public:
     // Forward declarations
     class iterator;
     class const_iterator;
 
-    // Constructors and Destructor
+    // Constructors and destructor
+    /**
+     * \brief Default constructor
+     */
     CircularLinkedList();
+    
+    /**
+     * \brief Copy constructor
+     * \param other List to copy from
+     */
     CircularLinkedList(const CircularLinkedList& other);
+    
+    /**
+     * \brief Move constructor
+     * \param other List to move from
+     */
     CircularLinkedList(CircularLinkedList&& other) noexcept;
+    
+    /**
+     * \brief Destructor
+     */
     ~CircularLinkedList();
     
-    // Operator=
+    // Assignment operators
+    /**
+     * \brief Copy assignment operator
+     * \param other List to copy from
+     * \return Reference to current object
+     */
     CircularLinkedList& operator=(const CircularLinkedList& other);
+    
+    /**
+     * \brief Move assignment operator
+     * \param other List to move from
+     * \return Reference to current object
+     */
     CircularLinkedList& operator=(CircularLinkedList&& other) noexcept;
     
     // Capacity
+    /**
+     * \brief Check if list is empty
+     * \return true if list is empty, false otherwise
+     */
     bool empty() const;
+    
+    /**
+     * \brief Get number of elements
+     * \return Number of elements in the list
+     */
     size_t size() const;
     
     // Element access
+    /**
+     * \brief Access first element
+     * \return Reference to first element
+     * \throw std::out_of_range if list is empty
+     */
     T& front();
+    
+    /**
+     * \brief Access last element
+     * \return Reference to last element
+     * \throw std::out_of_range if list is empty
+     */
     T& back();
+    
+    /**
+     * \brief Const access to first element
+     * \return Const reference to first element
+     * \throw std::out_of_range if list is empty
+     */
     const T& front() const;
+    
+    /**
+     * \brief Const access to last element
+     * \return Const reference to last element
+     * \throw std::out_of_range if list is empty
+     */
     const T& back() const;
     
     // Modifiers
+    /**
+     * \brief Add element to the beginning
+     * \param value Value to add
+     */
     void push_front(const T& value);
+    
+    /**
+     * \brief Add element to the end
+     * \param value Value to add
+     */
     void push_back(const T& value);
+    
+    /**
+     * \brief Remove first element
+     * \throw std::out_of_range if list is empty
+     */
     void pop_front();
+    
+    /**
+     * \brief Remove last element
+     * \throw std::out_of_range if list is empty
+     */
     void pop_back();
+    
+    /**
+     * \brief Clear the list
+     */
     void clear();
+    
+    /**
+     * \brief Insert element before position
+     * \param pos Iterator to position for insertion
+     * \param value Value to insert
+     * \return Iterator to inserted element
+     */
     iterator insert(iterator pos, const T& value);
+    
+    /**
+     * \brief Remove element at position
+     * \param pos Iterator to position for removal
+     * \return Iterator to next element
+     * \throw std::out_of_range if list is empty
+     * \throw std::invalid_argument if pos = end()
+     */
     iterator erase(iterator pos);
+    
+    /**
+     * \brief Replace list content
+     * \param n Number of elements
+     * \param value Value to fill with
+     */
     void assign(size_t n, const T& value);
+    
+    /**
+     * \brief Swap content with another list
+     * \param other Another list to swap with
+     */
     void swap(CircularLinkedList& other) noexcept;
     
     // Iterators
     using reverse_iterator = std::reverse_iterator<iterator>;
     using const_reverse_iterator = std::reverse_iterator<const_iterator>;
 
+    /**
+     * \brief Iterator to beginning of list
+     * \return Iterator to first element
+     */
     iterator begin();
+    
+    /**
+     * \brief Iterator to end of list
+     * \return Iterator to position after last element
+     */
     iterator end();
+    
+    /**
+     * \brief Const iterator to beginning of list
+     * \return Const iterator to first element
+     */
     const_iterator begin() const;
+    
+    /**
+     * \brief Const iterator to end of list
+     * \return Const iterator to position after last element
+     */
     const_iterator end() const;
+    
+    /**
+     * \brief Const iterator to beginning of list
+     * \return Const iterator to first element
+     */
     const_iterator cbegin() const;
+    
+    /**
+     * \brief Const iterator to end of list
+     * \return Const iterator to position after last element
+     */
     const_iterator cend() const;
+    
+    /**
+     * \brief Reverse iterator to beginning of reversed list
+     * \return Reverse iterator to last element
+     */
     reverse_iterator rbegin();
+    
+    /**
+     * \brief Reverse iterator to end of reversed list
+     * \return Reverse iterator to position before first element
+     */
     reverse_iterator rend();
+    
+    /**
+     * \brief Const reverse iterator to beginning of reversed list
+     * \return Const reverse iterator to last element
+     */
     const_reverse_iterator rbegin() const;
+    
+    /**
+     * \brief Const reverse iterator to end of reversed list
+     * \return Const reverse iterator to position before first element
+     */
     const_reverse_iterator rend() const;
+    
+    /**
+     * \brief Const reverse iterator to beginning of reversed list
+     * \return Const reverse iterator to last element
+     */
     const_reverse_iterator crbegin() const;
+    
+    /**
+     * \brief Const reverse iterator to end of reversed list
+     * \return Const reverse iterator to position before first element
+     */
     const_reverse_iterator crend() const;
 
     // Comparison operators
+    /**
+     * \brief Equality operator
+     * \param other Another list to compare with
+     * \return true if lists are equal
+     */
     bool operator==(const CircularLinkedList& other) const;
+    
+    /**
+     * \brief Inequality operator
+     * \param other Another list to compare with
+     * \return true if lists are not equal
+     */
     bool operator!=(const CircularLinkedList& other) const;
+    
+    /**
+     * \brief Less than operator
+     * \param other Another list to compare with
+     * \return true if current list is less than other
+     */
     bool operator<(const CircularLinkedList& other) const;
+    
+    /**
+     * \brief Greater than operator
+     * \param other Another list to compare with
+     * \return true if current list is greater than other
+     */
     bool operator>(const CircularLinkedList& other) const;
+    
+    /**
+     * \brief Less than or equal operator
+     * \param other Another list to compare with
+     * \return true if current list is less than or equal to other
+     */
     bool operator<=(const CircularLinkedList& other) const;
+    
+    /**
+     * \brief Greater than or equal operator
+     * \param other Another list to compare with
+     * \return true if current list is greater than or equal to other
+     */
     bool operator>=(const CircularLinkedList& other) const;
 
-    // Iterators classes
+    /**
+     * \class CircularLinkedList::iterator
+     * \brief Iterator for CircularLinkedList
+     */
     class iterator {
     private:
-        Node* current;
-        Node* head;
+        Node* current;  ///< Current node
+        Node* head;     ///< Head of the list (for end detection)
         
     public:
         using iterator_category = std::bidirectional_iterator_tag;
@@ -97,24 +316,78 @@ public:
         using pointer = T*;
         using reference = T&;
 
+        /**
+         * \brief Iterator constructor
+         * \param n Current node
+         * \param s Head of the list
+         */
         iterator(Node* n = nullptr, Node* s = nullptr) : current(n), head(s) {}
         
+        /**
+         * \brief Dereference operator
+         * \return Reference to current node's data
+         * \throw std::out_of_range if iterator is invalid
+         */
         reference operator*() const;
+        
+        /**
+         * \brief Member access operator
+         * \return Pointer to current node's data
+         * \throw std::out_of_range if iterator is invalid
+         */
         pointer operator->() const;
+        
+        /**
+         * \brief Prefix increment
+         * \return Reference to incremented iterator
+         * \throw std::out_of_range if iterator is invalid
+         */
         iterator& operator++();
+        
+        /**
+         * \brief Postfix increment
+         * \return Iterator before increment
+         * \throw std::out_of_range if iterator is invalid
+         */
         iterator operator++(int);
+        
+        /**
+         * \brief Prefix decrement
+         * \return Reference to decremented iterator
+         */
         iterator& operator--();
+        
+        /**
+         * \brief Postfix decrement
+         * \return Iterator before decrement
+         */
         iterator operator--(int);
+        
+        /**
+         * \brief Equality comparison
+         * \param other Another iterator to compare with
+         * \return true if iterators are equal
+         */
         bool operator==(const iterator& other) const;
+        
+        /**
+         * \brief Inequality comparison
+         * \param other Another iterator to compare with
+         * \return true if iterators are not equal
+         */
         bool operator!=(const iterator& other) const;
         
         friend class CircularLinkedList;
     };
 
+    /**
+     * \class CircularLinkedList::const_iterator
+     * \brief Const iterator for CircularLinkedList
+     */
     class const_iterator {
     private:
-        Node* current;
-        Node* head;
+        Node* current;  ///< Current node
+        Node* head;     ///< Head of the list (for end detection)
         
     public:
         using iterator_category = std::bidirectional_iterator_tag;
@@ -123,21 +396,77 @@ public:
         using pointer = const T*;
         using reference = const T&;
 
+        /**
+         * \brief Const iterator constructor
+         * \param n Current node
+         * \param s Head of the list
+         */
         const_iterator(Node* n = nullptr, Node* s = nullptr) : current(n), head(s) {}
+        
+        /**
+         * \brief Conversion constructor from regular iterator
+         * \param it Iterator to convert from
+         */
         const_iterator(const iterator& it) : current(it.current), head(it.head) {}
         
+        /**
+         * \brief Dereference operator
+         * \return Const reference to current node's data
+         * \throw std::out_of_range if iterator is invalid
+         */
         reference operator*() const;
+        
+        /**
+         * \brief Member access operator
+         * \return Const pointer to current node's data
+         * \throw std::out_of_range if iterator is invalid
+         */
         pointer operator->() const;
+        
+        /**
+         * \brief Prefix increment
+         * \return Reference to incremented iterator
+         * \throw std::out_of_range if iterator is invalid
+         */
         const_iterator& operator++();
+        
+        /**
+         * \brief Postfix increment
+         * \return Iterator before increment
+         * \throw std::out_of_range if iterator is invalid
+         */
         const_iterator operator++(int);
+        
+        /**
+         * \brief Prefix decrement
+         * \return Reference to decremented iterator
+         */
         const_iterator& operator--();
+        
+        /**
+         * \brief Postfix decrement
+         * \return Iterator before decrement
+         */
         const_iterator operator--(int);
+        
+        /**
+         * \brief Equality comparison
+         * \param other Another iterator to compare with
+         * \return true if iterators are equal
+         */
         bool operator==(const const_iterator& other) const;
+        
+        /**
+         * \brief Inequality comparison
+         * \param other Another iterator to compare with
+         * \return true if iterators are not equal
+         */
         bool operator!=(const const_iterator& other) const;
         
         friend class CircularLinkedList;
     };
 };
+
 
 // Realization
 

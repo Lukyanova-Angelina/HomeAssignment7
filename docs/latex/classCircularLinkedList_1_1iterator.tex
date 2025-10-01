@@ -1,0 +1,468 @@
+\doxysection{Circular\+Linked\+List\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::iterator Class Reference}
+\hypertarget{classCircularLinkedList_1_1iterator}{}\label{classCircularLinkedList_1_1iterator}\index{CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}}
+
+
+Iterator for \doxylink{classCircularLinkedList}{Circular\+Linked\+List}.  
+
+
+
+
+{\ttfamily \#include $<$Circular\+Linked\+List.\+h$>$}
+
+
+
+Collaboration diagram for Circular\+Linked\+List\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::iterator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classCircularLinkedList_1_1iterator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{using}} \mbox{\hyperlink{classCircularLinkedList_1_1iterator_ab9e8ddcb38ffad3fbcc5f767cbe6d848}{iterator\+\_\+category}} = std\+::bidirectional\+\_\+iterator\+\_\+tag
+\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{using}} \mbox{\hyperlink{classCircularLinkedList_1_1iterator_ae956fbf73fe5bacc7857ed426c05acd2}{value\+\_\+type}} = \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}}
+\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{using}} \mbox{\hyperlink{classCircularLinkedList_1_1iterator_ab6a6a9fcb98cb765eecd77c315ae2005}{difference\+\_\+type}} = std\+::ptrdiff\+\_\+t
+\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{using}} \mbox{\hyperlink{classCircularLinkedList_1_1iterator_a57b49d8a46c50bec776cc8cf863d6dd0}{pointer}} = \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} \texorpdfstring{$\ast$}{*}
+\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{using}} \mbox{\hyperlink{classCircularLinkedList_1_1iterator_a984bf7d1c9e003deb68c865ef1ef7697}{reference}} = \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} \&
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCircularLinkedList_1_1iterator_a024a84d5f22b9ba33e3718de3050d618}{iterator}} (\mbox{\hyperlink{structCircularLinkedList_1_1Node}{Node}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{n}}=\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{nullptr}}, \mbox{\hyperlink{structCircularLinkedList_1_1Node}{Node}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{s}}=\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{nullptr}})
+\begin{DoxyCompactList}\small\item\em Iterator constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_1_1iterator_a984bf7d1c9e003deb68c865ef1ef7697}{reference}} \mbox{\hyperlink{classCircularLinkedList_1_1iterator_aef25d70b25afcf09e52e0391d978071a}{operator\texorpdfstring{$\ast$}{*}}} () \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}}
+\begin{DoxyCompactList}\small\item\em Dereference operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_1_1iterator_a57b49d8a46c50bec776cc8cf863d6dd0}{pointer}} \mbox{\hyperlink{classCircularLinkedList_1_1iterator_ae66de80c3f9d0cfc4da27f01af73b45e}{operator-\/$>$}} () \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}}
+\begin{DoxyCompactList}\small\item\em Member access operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_1_1iterator}{iterator}} \& \mbox{\hyperlink{classCircularLinkedList_1_1iterator_a5205b4b730128a88bc50e8ddeca4fc98}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em Prefix increment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_1_1iterator}{iterator}} \mbox{\hyperlink{classCircularLinkedList_1_1iterator_a0f74645af1a1fc6b8d40442c4465a2ff}{operator++}} (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{int}})
+\begin{DoxyCompactList}\small\item\em Postfix increment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_1_1iterator}{iterator}} \& \mbox{\hyperlink{classCircularLinkedList_1_1iterator_a204edeff3f02c85e96530a221803cc32}{operator-\/-\/}} ()
+\begin{DoxyCompactList}\small\item\em Prefix decrement. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_1_1iterator}{iterator}} \mbox{\hyperlink{classCircularLinkedList_1_1iterator_a888d0165338aa46f9fa3034261ba03a3}{operator-\/-\/}} (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{int}})
+\begin{DoxyCompactList}\small\item\em Postfix decrement. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{bool}} \mbox{\hyperlink{classCircularLinkedList_1_1iterator_aa10a98caa502924a4d8654a1117c46a2}{operator==}} (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList_1_1iterator}{iterator}} \&\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}) \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}}
+\begin{DoxyCompactList}\small\item\em Equality comparison. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{bool}} \mbox{\hyperlink{classCircularLinkedList_1_1iterator_aae34c3474846ccf2c8cecd8b1c783503}{operator!=}} (\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList_1_1iterator}{iterator}} \&\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}) \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}}
+\begin{DoxyCompactList}\small\item\em Inequality comparison. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structCircularLinkedList_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classCircularLinkedList_1_1iterator_acd9395070489b36c7072e3b17ef8ac27}{current}}
+\begin{DoxyCompactList}\small\item\em Current node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structCircularLinkedList_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classCircularLinkedList_1_1iterator_adff5348a34bd47e35093f911629530b0}{head}}
+\begin{DoxyCompactList}\small\item\em Head of the list (for end detection) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{class}} \mbox{\hyperlink{classCircularLinkedList_1_1iterator_a294e6508722da1f25074a10c5fca5ef2}{Circular\+Linked\+List}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}}$>$\newline
+class Circular\+Linked\+List$<$ T $>$\+::iterator}
+Iterator for \doxylink{classCircularLinkedList}{Circular\+Linked\+List}. 
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00307}{307}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\Hypertarget{classCircularLinkedList_1_1iterator_ab6a6a9fcb98cb765eecd77c315ae2005}\label{classCircularLinkedList_1_1iterator_ab6a6a9fcb98cb765eecd77c315ae2005} 
+\index{CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}!difference\_type@{difference\_type}}
+\index{difference\_type@{difference\_type}!CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}}
+\doxysubsubsection{\texorpdfstring{difference\_type}{difference\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{using}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::iterator\+::difference\+\_\+type =  std\+::ptrdiff\+\_\+t}
+
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00315}{315}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+\Hypertarget{classCircularLinkedList_1_1iterator_ab9e8ddcb38ffad3fbcc5f767cbe6d848}\label{classCircularLinkedList_1_1iterator_ab9e8ddcb38ffad3fbcc5f767cbe6d848} 
+\index{CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}!iterator\_category@{iterator\_category}}
+\index{iterator\_category@{iterator\_category}!CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}}
+\doxysubsubsection{\texorpdfstring{iterator\_category}{iterator\_category}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{using}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::iterator\+::iterator\+\_\+category =  std\+::bidirectional\+\_\+iterator\+\_\+tag}
+
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00313}{313}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+\Hypertarget{classCircularLinkedList_1_1iterator_a57b49d8a46c50bec776cc8cf863d6dd0}\label{classCircularLinkedList_1_1iterator_a57b49d8a46c50bec776cc8cf863d6dd0} 
+\index{CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}!pointer@{pointer}}
+\index{pointer@{pointer}!CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}}
+\doxysubsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{using}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::iterator\+::pointer =  \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}}\texorpdfstring{$\ast$}{*}}
+
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00316}{316}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+\Hypertarget{classCircularLinkedList_1_1iterator_a984bf7d1c9e003deb68c865ef1ef7697}\label{classCircularLinkedList_1_1iterator_a984bf7d1c9e003deb68c865ef1ef7697} 
+\index{CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}!reference@{reference}}
+\index{reference@{reference}!CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}}
+\doxysubsubsection{\texorpdfstring{reference}{reference}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{using}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::iterator\+::reference =  \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}}\&}
+
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00317}{317}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+\Hypertarget{classCircularLinkedList_1_1iterator_ae956fbf73fe5bacc7857ed426c05acd2}\label{classCircularLinkedList_1_1iterator_ae956fbf73fe5bacc7857ed426c05acd2} 
+\index{CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}!value\_type@{value\_type}}
+\index{value\_type@{value\_type}!CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}}
+\doxysubsubsection{\texorpdfstring{value\_type}{value\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{using}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::iterator\+::value\+\_\+type =  \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}}}
+
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00314}{314}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classCircularLinkedList_1_1iterator_a024a84d5f22b9ba33e3718de3050d618}\label{classCircularLinkedList_1_1iterator_a024a84d5f22b9ba33e3718de3050d618} 
+\index{CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}!iterator@{iterator}}
+\index{iterator@{iterator}!CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}}
+\doxysubsubsection{\texorpdfstring{iterator()}{iterator()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::iterator\+::iterator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCircularLinkedList_1_1Node}{Node}} \texorpdfstring{$\ast$}{*}}]{n = {\ttfamily \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{nullptr}}},  }\item[{\mbox{\hyperlink{structCircularLinkedList_1_1Node}{Node}} \texorpdfstring{$\ast$}{*}}]{s = {\ttfamily \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{nullptr}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Iterator constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Current node \\
+\hline
+{\em s} & Head of the list \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00324}{324}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00324\ :\ \mbox{\hyperlink{classCircularLinkedList_1_1iterator_acd9395070489b36c7072e3b17ef8ac27}{current}}(\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{n}}),\ \mbox{\hyperlink{classCircularLinkedList_1_1iterator_adff5348a34bd47e35093f911629530b0}{head}}(\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{s}})\ \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCircularLinkedList_1_1iterator_aae34c3474846ccf2c8cecd8b1c783503}\label{classCircularLinkedList_1_1iterator_aae34c3474846ccf2c8cecd8b1c783503} 
+\index{CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{bool}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::iterator\+::operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList_1_1iterator}{iterator}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Inequality comparison. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another iterator to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if iterators are not equal 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00831}{831}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00831\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00832\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_1_1iterator_acd9395070489b36c7072e3b17ef8ac27}{current}}\ !=\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.current;}
+\DoxyCodeLine{00833\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classCircularLinkedList_1_1iterator_aef25d70b25afcf09e52e0391d978071a}\label{classCircularLinkedList_1_1iterator_aef25d70b25afcf09e52e0391d978071a} 
+\index{CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList_1_1iterator_a984bf7d1c9e003deb68c865ef1ef7697}{\+::iterator\+::reference}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::iterator\+::operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Dereference operator. 
+
+\begin{DoxyReturn}{Returns}
+Reference to current node\textquotesingle{}s data 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & if iterator is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00772}{772}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00772\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00773\ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classCircularLinkedList_1_1iterator_acd9395070489b36c7072e3b17ef8ac27}{current}})\ \textcolor{keywordflow}{throw}\ std::out\_of\_range(\textcolor{stringliteral}{"{}Iterator:\ dereferencing\ end\ iterator"{}});}
+\DoxyCodeLine{00774\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_1_1iterator_acd9395070489b36c7072e3b17ef8ac27}{current}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_a780e86ea8aa229119d9053cf2613b3dc}{data}};}
+\DoxyCodeLine{00775\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classCircularLinkedList_1_1iterator_a5205b4b730128a88bc50e8ddeca4fc98}\label{classCircularLinkedList_1_1iterator_a5205b4b730128a88bc50e8ddeca4fc98} 
+\index{CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList_1_1iterator_a024a84d5f22b9ba33e3718de3050d618}{\+::iterator}} \& \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::iterator\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prefix increment. 
+
+\begin{DoxyReturn}{Returns}
+Reference to incremented iterator 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & if iterator is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00786}{786}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00786\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00787\ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classCircularLinkedList_1_1iterator_acd9395070489b36c7072e3b17ef8ac27}{current}})\ \textcolor{keywordflow}{throw}\ std::out\_of\_range(\textcolor{stringliteral}{"{}Iterator:\ incrementing\ end\ iterator"{}});}
+\DoxyCodeLine{00788\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_1_1iterator_acd9395070489b36c7072e3b17ef8ac27}{current}})\ \{}
+\DoxyCodeLine{00789\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_1_1iterator_acd9395070489b36c7072e3b17ef8ac27}{current}}\ =\ \mbox{\hyperlink{classCircularLinkedList_1_1iterator_acd9395070489b36c7072e3b17ef8ac27}{current}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_ae5a8ecbd90b92821ef31d4a351551ac1}{next}};}
+\DoxyCodeLine{00790\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_1_1iterator_acd9395070489b36c7072e3b17ef8ac27}{current}}\ ==\ \mbox{\hyperlink{classCircularLinkedList_1_1iterator_adff5348a34bd47e35093f911629530b0}{head}})\ \{}
+\DoxyCodeLine{00791\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_1_1iterator_acd9395070489b36c7072e3b17ef8ac27}{current}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00792\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00793\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00794\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00795\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classCircularLinkedList_1_1iterator_a0f74645af1a1fc6b8d40442c4465a2ff}\label{classCircularLinkedList_1_1iterator_a0f74645af1a1fc6b8d40442c4465a2ff} 
+\index{CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList_1_1iterator_a024a84d5f22b9ba33e3718de3050d618}{\+::iterator}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::iterator\+::operator++ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{int}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Postfix increment. 
+
+\begin{DoxyReturn}{Returns}
+Iterator before increment 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & if iterator is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00799}{799}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00799\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00800\ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classCircularLinkedList_1_1iterator_acd9395070489b36c7072e3b17ef8ac27}{current}})\ \textcolor{keywordflow}{throw}\ std::out\_of\_range(\textcolor{stringliteral}{"{}Iterator:\ incrementing\ end\ iterator"{}});}
+\DoxyCodeLine{00801\ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_1_1iterator_a024a84d5f22b9ba33e3718de3050d618}{iterator}}\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{temp}}\ =\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00802\ \ \ \ \ ++(*this);}
+\DoxyCodeLine{00803\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{temp}};}
+\DoxyCodeLine{00804\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classCircularLinkedList_1_1iterator_a204edeff3f02c85e96530a221803cc32}\label{classCircularLinkedList_1_1iterator_a204edeff3f02c85e96530a221803cc32} 
+\index{CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList_1_1iterator_a024a84d5f22b9ba33e3718de3050d618}{\+::iterator}} \& \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::iterator\+::operator-\/-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prefix decrement. 
+
+\begin{DoxyReturn}{Returns}
+Reference to decremented iterator 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00808}{808}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00808\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00809\ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classCircularLinkedList_1_1iterator_acd9395070489b36c7072e3b17ef8ac27}{current}})\ \{}
+\DoxyCodeLine{00810\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classCircularLinkedList_1_1iterator_adff5348a34bd47e35093f911629530b0}{head}})\ \mbox{\hyperlink{classCircularLinkedList_1_1iterator_acd9395070489b36c7072e3b17ef8ac27}{current}}\ =\ \mbox{\hyperlink{classCircularLinkedList_1_1iterator_adff5348a34bd47e35093f911629530b0}{head}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_addda6f06adb20c4d9fa2629fcafeaee5}{prev}};}
+\DoxyCodeLine{00811\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00812\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_1_1iterator_acd9395070489b36c7072e3b17ef8ac27}{current}}\ =\ \mbox{\hyperlink{classCircularLinkedList_1_1iterator_acd9395070489b36c7072e3b17ef8ac27}{current}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_addda6f06adb20c4d9fa2629fcafeaee5}{prev}};}
+\DoxyCodeLine{00813\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00814\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00815\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classCircularLinkedList_1_1iterator_a888d0165338aa46f9fa3034261ba03a3}\label{classCircularLinkedList_1_1iterator_a888d0165338aa46f9fa3034261ba03a3} 
+\index{CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList_1_1iterator_a024a84d5f22b9ba33e3718de3050d618}{\+::iterator}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::iterator\+::operator-\/-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{int}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Postfix decrement. 
+
+\begin{DoxyReturn}{Returns}
+Iterator before decrement 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00819}{819}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00819\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00820\ \ \ \ \ \mbox{\hyperlink{classCircularLinkedList_1_1iterator_a024a84d5f22b9ba33e3718de3050d618}{iterator}}\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{temp}}\ =\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00821\ \ \ \ \ -\/-\/(*this);}
+\DoxyCodeLine{00822\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{temp}};}
+\DoxyCodeLine{00823\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classCircularLinkedList_1_1iterator_ae66de80c3f9d0cfc4da27f01af73b45e}\label{classCircularLinkedList_1_1iterator_ae66de80c3f9d0cfc4da27f01af73b45e} 
+\index{CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}}
+\doxysubsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\mbox{\hyperlink{classCircularLinkedList_1_1iterator_a57b49d8a46c50bec776cc8cf863d6dd0}{\+::iterator\+::pointer}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::iterator\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Member access operator. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to current node\textquotesingle{}s data 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & if iterator is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00779}{779}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00779\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00780\ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classCircularLinkedList_1_1iterator_acd9395070489b36c7072e3b17ef8ac27}{current}})\ \textcolor{keywordflow}{throw}\ std::out\_of\_range(\textcolor{stringliteral}{"{}Iterator:\ dereferencing\ end\ iterator"{}});}
+\DoxyCodeLine{00781\ \ \ \ \ \textcolor{keywordflow}{return}\ \&\mbox{\hyperlink{classCircularLinkedList_1_1iterator_acd9395070489b36c7072e3b17ef8ac27}{current}}-\/>\mbox{\hyperlink{structCircularLinkedList_1_1Node_a780e86ea8aa229119d9053cf2613b3dc}{data}};}
+\DoxyCodeLine{00782\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classCircularLinkedList_1_1iterator_aa10a98caa502924a4d8654a1117c46a2}\label{classCircularLinkedList_1_1iterator_aa10a98caa502924a4d8654a1117c46a2} 
+\index{CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}!operator==@{operator==}}
+\index{operator==@{operator==}!CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{bool}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::iterator\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{const}} \mbox{\hyperlink{classCircularLinkedList_1_1iterator}{iterator}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Equality comparison. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another iterator to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if iterators are equal 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00826}{826}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00826\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00827\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCircularLinkedList_1_1iterator_acd9395070489b36c7072e3b17ef8ac27}{current}}\ ==\ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{other}}.current;}
+\DoxyCodeLine{00828\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classCircularLinkedList_1_1iterator_a294e6508722da1f25074a10c5fca5ef2}\label{classCircularLinkedList_1_1iterator_a294e6508722da1f25074a10c5fca5ef2} 
+\index{CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}!CircularLinkedList@{CircularLinkedList}}
+\index{CircularLinkedList@{CircularLinkedList}!CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}}
+\doxysubsubsection{\texorpdfstring{CircularLinkedList}{CircularLinkedList}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{friend}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{class}} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00380}{380}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classCircularLinkedList_1_1iterator_acd9395070489b36c7072e3b17ef8ac27}\label{classCircularLinkedList_1_1iterator_acd9395070489b36c7072e3b17ef8ac27} 
+\index{CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}!current@{current}}
+\index{current@{current}!CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}}
+\doxysubsubsection{\texorpdfstring{current}{current}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{structCircularLinkedList_1_1Node}{Node}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::iterator\+::current\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Current node. 
+
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00309}{309}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+\Hypertarget{classCircularLinkedList_1_1iterator_adff5348a34bd47e35093f911629530b0}\label{classCircularLinkedList_1_1iterator_adff5348a34bd47e35093f911629530b0} 
+\index{CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}!head@{head}}
+\index{head@{head}!CircularLinkedList$<$ T $>$::iterator@{CircularLinkedList$<$ T $>$::iterator}}
+\doxysubsubsection{\texorpdfstring{head}{head}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{typename}} \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$ \\
+\mbox{\hyperlink{structCircularLinkedList_1_1Node}{Node}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classCircularLinkedList}{Circular\+Linked\+List}}$<$ \mbox{\hyperlink{classCircularLinkedList_a855e8674e4706b162f282e2d2845b0c9}{T}} $>$\+::iterator\+::head\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Head of the list (for end detection) 
+
+
+
+Definition at line \mbox{\hyperlink{CircularLinkedList_8h_source_l00310}{310}} of file \mbox{\hyperlink{CircularLinkedList_8h_source}{Circular\+Linked\+List.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{CircularLinkedList_8h}{Circular\+Linked\+List.\+h}}\end{DoxyCompactItemize}

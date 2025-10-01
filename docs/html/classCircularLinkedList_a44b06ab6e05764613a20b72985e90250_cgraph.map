@@ -1,0 +1,8 @@
+<map id="CircularLinkedList::clear" name="CircularLinkedList::clear">
+<area shape="rect" id="Node000001" title="Clear the list." alt="" coords="5,5,143,45"/>
+<area shape="rect" id="Node000002" href="$classCircularLinkedList.html#a8436a0177cb8927954f142c8d2ccfd93" title="Check if list is empty." alt="" coords="376,5,513,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,20,191,19,328,19,362,20,362,25,328,24,191,24,143,25"/>
+<area shape="rect" id="Node000003" href="$classCircularLinkedList.html#a0c43c6b0d2623d8c65e94ee02983169e" title="Remove first element." alt="" coords="191,33,328,73"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="143,33,177,38,177,44,142,38"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="328,40,362,35,363,40,329,46"/>
+</map>

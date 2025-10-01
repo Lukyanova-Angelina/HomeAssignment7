@@ -1,0 +1,6 @@
+<map id="CircularLinkedList&lt; T &gt;" name="CircularLinkedList&lt; T &gt;">
+<area shape="rect" id="Node000001" title="Template class for circular doubly linked list." alt="" coords="5,108,180,133"/>
+<area shape="rect" id="Node000002" href="$structCircularLinkedList_1_1Node.html" title="Internal node structure of the list." alt="" coords="24,5,161,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,59,95,108,90,108,90,59"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="176,16,184,19,188,26,180,34,162,37,161,32,177,29,183,25,181,23,174,21"/>
+</map>
